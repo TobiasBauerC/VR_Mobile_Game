@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter(Collider c)
     {
-        if (c.gameObject.tag == "Power Pellet")
+        if (c.gameObject.tag == "PowerPellet")
         {
             Destroy(c.gameObject);
             _chaseModeCoroutine = StartCoroutine(ChaseMode());
