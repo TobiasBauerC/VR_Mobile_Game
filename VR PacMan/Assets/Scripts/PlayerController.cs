@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         _rb.velocity = _mainCam.forward * _speed;
-        Debug.Log(chaseMode);
     }
 
     void OnTriggerEnter(Collider c)
@@ -41,7 +40,13 @@ public class PlayerController : MonoBehaviour
         if (c.gameObject.tag == "PowerPellet")
         {
             Destroy(c.gameObject);
+            GameManager.instance.AddScore(50);
             _chaseModeCoroutine = StartCoroutine(ChaseMode());
+        }
+        else if (c.gameObject.tag == "Pellet")
+        {
+            Destroy(c.gameObject);
+            GameManager.instance.AddScore(10);
         }
     }
 
