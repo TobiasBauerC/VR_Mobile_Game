@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody _rb = null;
-    private WaitForSeconds _chaseModeTime;
-    private Coroutine _chaseModeCoroutine;
+    private Rigidbody m_rb = null;
+    private WaitForSeconds m_chaseModeTime = null;
+    private Coroutine m_chaseModeCoroutine = null;
 
-    [SerializeField] private float _speed = 5.0f;
-    [SerializeField] private Transform _mainCam = null;
+    [SerializeField] private float m_speed = 5.0f;
+    [SerializeField] private Transform m_mainCam = null;
 
     public bool chaseMode
     {
@@ -20,19 +20,22 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if (!_mainCam)
-            _mainCam = Camera.main.transform;
+        if (!m_mainCam)
+            m_mainCam = Camera.main.transform;
 
-        _rb = GetComponent<Rigidbody>();
+        m_rb = GetComponent<Rigidbody>();
 
-        _chaseModeTime = new WaitForSeconds(10.0f);
+        m_chaseModeTime = new WaitForSeconds(10.0f);
         chaseMode = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _rb.velocity = _mainCam.forward * _speed;
+        if (GameManager.instance.paused)
+            return;
+
+        m_rb.velocity = m_mainCam.forward * m_speed;
     }
 
     void OnTriggerEnter(Collider c)
@@ -41,7 +44,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(c.gameObject);
             GameManager.instance.AddScore(50);
-            _chaseModeCoroutine = StartCoroutine(ChaseMode());
+            m_chaseModeCoroutine = StartCoroutine(ChaseMode());
         }
         else if (c.gameObject.tag == "Pellet")
         {
@@ -50,10 +53,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter(Collision c)
+    {
+        if (c.gameObject.tag == "Ghost")
+        {
+            GameManager.instance.PlayerHit();
+        }
+    }
+
     private IEnumerator ChaseMode()
     {
         chaseMode = true;
-        yield return _chaseModeTime;
+        yield return m_chaseModeTime;
         chaseMode = false;
     }
 }
