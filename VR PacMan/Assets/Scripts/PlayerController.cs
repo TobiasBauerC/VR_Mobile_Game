@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody m_rb = null;
     private WaitForSeconds m_chaseModeTime = null;
     private Coroutine m_chaseModeCoroutine = null;
+    private int m_blueGhostPoints = 200;
 
     [SerializeField] private float m_speed = 5.0f;
     [SerializeField] private Transform m_mainCam = null;
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.AddScore(50);
             m_chaseModeCoroutine = StartCoroutine(ChaseMode());
         }
-        else if (c.gameObject.tag == "Pellet")
+        else if (c.gameObject.tag == "Pelletl")
         {
             Destroy(c.gameObject);
             GameManager.instance.AddScore(10);
@@ -57,7 +58,16 @@ public class PlayerController : MonoBehaviour
     {
         if (c.gameObject.tag == "Ghost")
         {
-            GameManager.instance.PlayerHit();
+            if (chaseMode)
+            {
+                c.gameObject.GetComponent<GhostController>().Respawn();
+                GameManager.instance.AddScore(m_blueGhostPoints);
+                m_blueGhostPoints *= 2;
+            }
+            else
+            {
+                GameManager.instance.PlayerHit();
+            }
         }
     }
 
@@ -66,5 +76,6 @@ public class PlayerController : MonoBehaviour
         chaseMode = true;
         yield return m_chaseModeTime;
         chaseMode = false;
+        int m_blueGhostPoints = 200;
     }
 }
