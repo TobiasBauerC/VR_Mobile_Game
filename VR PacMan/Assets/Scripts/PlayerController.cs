@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.AddScore(50);
             m_chaseModeCoroutine = StartCoroutine(ChaseMode());
         }
-        else if (c.gameObject.tag == "Pelletl")
+        else if (c.gameObject.tag == "Pellet")
         {
             Destroy(c.gameObject);
             GameManager.instance.AddScore(10);
