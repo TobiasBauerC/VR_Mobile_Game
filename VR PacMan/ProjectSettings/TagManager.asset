@@ -7,6 +7,8 @@ TagManager:
   - Pellet
   - PowerPellet
   - Ghost
+  - HorizontalRail
+  - VerticalRail
   layers:
   - Default
   - TransparentFX
@@ -41,6 +43,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 3085723963
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
