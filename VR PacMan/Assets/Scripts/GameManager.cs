@@ -120,6 +120,7 @@ public class GameManager : MonoBehaviour
         yield return _respawnWait;
         _readyTxt.text = READY_MSG;
         _playerObject.transform.position = _spawnLocation;
+		StartCoroutine(StartPlayer());
     }
 
     private IEnumerator StartPlayer()

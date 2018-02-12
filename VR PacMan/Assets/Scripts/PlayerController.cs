@@ -137,9 +137,22 @@ public class PlayerController : MonoBehaviour
             {
 				if (transform.position.z != _currentHorRail.zClamp)
                 {
-                    Vector3 pos = transform.position;
-                    pos.z = _currentHorRail.zClamp;
-                    transform.position = pos;
+					Vector3 pos = transform.position;
+
+					if(transform.position.z - _currentHorRail.zClamp > 0.08f)
+					{
+						pos.z -= 0.05f;
+					}
+					else if(transform.position.z - _currentHorRail.zClamp < -0.08f)
+					{
+						pos.z += 0.05f;
+					}
+					else
+					{
+	                    pos.z = _currentHorRail.zClamp;
+					}
+
+					transform.position = pos;
                 }
 
                 if (lookDir.y == 270)
@@ -156,8 +169,21 @@ public class PlayerController : MonoBehaviour
                 if (transform.position.x != _currentVerRail.xClamp)
                 {
                     Vector3 pos = transform.position;
-                    pos.x = _currentVerRail.xClamp;
-                    transform.position = pos;
+
+					if(transform.position.x - _currentVerRail.xClamp > 0.08f)
+					{
+						pos.x -= 0.05f;
+					}
+					else if(transform.position.x - _currentVerRail.xClamp < -0.08f)
+					{
+						pos.x += 0.05f;
+					}
+					else
+					{
+                    	pos.x = _currentVerRail.xClamp;
+					}
+
+					transform.position = pos;
                 }
 
                 if (lookDir.y == 0 || lookDir.y == 360)
