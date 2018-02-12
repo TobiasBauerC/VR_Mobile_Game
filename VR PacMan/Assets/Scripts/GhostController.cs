@@ -4,35 +4,35 @@ using UnityEngine;
 
 public class GhostController : MonoBehaviour
 {
-    private Renderer m_renderer = null;
-    private Color m_normalColor = Color.black;
+	private Renderer _renderer = null;
+	private Color _normalColor = Color.black;
 
-    [SerializeField] private Transform m_spawnPos = null;
+	[SerializeField] private Transform _spawnPos = null;
 
     // Use this for initialization
     void Start()
     {
-        m_renderer = GetComponent<Renderer>();
-        m_normalColor = m_renderer.material.color;
+        _renderer = GetComponent<Renderer>();
+        _normalColor = _renderer.material.color;
     }
 
-    public void GoBlue(bool _state)
+    public void GoBlue(bool state)
     {
-        if (_state)
+        if (state)
         {
-            m_renderer.material.color = Color.blue;
+            _renderer.material.color = Color.blue;
         }
         else
         {
-            m_renderer.material.color = m_normalColor;
+            _renderer.material.color = _normalColor;
         }
     }
 
     public void Respawn()
     {
         Vector3 newPos = transform.position;
-        newPos.x = m_spawnPos.position.x;
-        newPos.z = m_spawnPos.position.z;
+        newPos.x = _spawnPos.position.x;
+        newPos.z = _spawnPos.position.z;
         transform.position = newPos;
         GoBlue(false);
     }

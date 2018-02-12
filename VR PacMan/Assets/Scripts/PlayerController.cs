@@ -4,34 +4,43 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody m_rb = null;
-    private WaitForSeconds m_chaseModeTime = null;
-    private Coroutine m_chaseModeCoroutine = null;
-    public RailInfo m_currentHorRail = null;
-    public RailInfo m_currentVerRail = null;
-    private int m_blueGhostPoints = 200;
-    private bool m_moving = false;
-    private Vector3 m_upVector = new Vector3(0, 0, 1);
-    private Vector3 m_downVector = new Vector3(0, 0, -1);
+    private Rigidbody _rb = null;
+	private WaitForSeconds _chaseModeTime = null;
+	private WaitForSeconds _dashCoolDown = null;
+	private Coroutine _chaseModeCoroutine = null;
+	private RailInfo _currentHorRail = null;
+	private RailInfo _currentVerRail = null;
+	private Vector3 _upVector = new Vector3(0, 0, 1);
+	private Vector3 _downVector = new Vector3(0, 0, -1);
+	private int _blueGhostPoints = 200;
+	private float _speed = 0.0f;
+	private float _tapElapsedTime = 0.0f;
+	private float _dashElapsedTime = 0.0f;
+	private bool _moving = false;
+	private bool _dashing = false;
+	private bool _tapped = false;
 
-    [SerializeField] private float m_speed = 5.0f;
-    [SerializeField] private Transform m_cam = null;
+	[SerializeField] private float _normalSpeed = 5.0f;
+	[SerializeField] private float _dashSpeed = 50.0f;
+	[SerializeField] private float _tapTime = 0.1f;
+	[SerializeField] private float _dashTime = 0.75f;
+	[SerializeField] private Transform _cam = null;
 
-    public bool chaseMode
-    {
-        private set;
-        get;
-    }
+    public bool chaseMode { private set; get; }
+	public bool canDash { private set; get; }
+
 
     // Use this for initialization
     void Start()
     {
-        m_rb = GetComponent<Rigidbody>();
-        if (!m_cam)
-            m_cam = Camera.main.transform;
+        _rb = GetComponent<Rigidbody>();
+        if (!_cam)
+            _cam = Camera.main.transform;
 
-        m_chaseModeTime = new WaitForSeconds(10.0f);
+        _chaseModeTime = new WaitForSeconds(10.0f);
+		_dashCoolDown = new WaitForSeconds(10.0f);
         chaseMode = false;
+		canDash = true;
     }
 
     // Update is called once per frame
@@ -39,89 +48,152 @@ public class PlayerController : MonoBehaviour
     {
         if (GameManager.instance.paused)
             return;
+		
         PlayerMovement();
     }
 
     void PlayerMovement()
     {
-#if UNITY_ANDROID || UNITY_IOS
+		if(_tapped)
+		{
+			_tapElapsedTime += Time.deltaTime;
+		}
+
+		#if UNITY_ANDROID || UNITY_IOS
         for (int i = 0; i < Input.touchCount; ++i)
         {
             if (Input.GetTouch(i).phase == TouchPhase.Began)
-                m_moving = true;
+			{
+                _moving = true;
+				_tapped = true;
+			}
             else if (Input.GetTouch(i).phase == TouchPhase.Ended)
-                m_moving = false;
-        }
-#endif
-#if UNITY_EDITOR
-        if (Input.GetMouseButton(0))
-            m_moving = true;
-        else
-            m_moving = false;
-#endif
+			{
+                _moving = false;
+				_tapped = false;
 
-        if (m_moving)
+				if(_tapElapsedTime <= _tapTime)
+				{
+					Dash();
+				}
+
+				_tapElapsedTime = 0.0f;
+			}
+        }
+			
+		#endif
+		#if UNITY_EDITOR
+        if (Input.GetMouseButtonDown(0))
+		{
+            _moving = true;
+			_tapped = true;
+		}
+		else if(Input.GetMouseButtonUp(0))
+		{
+            _moving = false;
+			_tapped = false;
+
+			if(_tapElapsedTime <= _tapTime)
+			{
+				Dash();
+			}
+
+			_tapElapsedTime = 0.0f;
+		}
+		#endif
+
+		_speed = _normalSpeed;
+
+		if(_dashing)
+		{
+			Dash();
+		}
+
+        if (_moving)
         {
-            Vector3 lookDir = m_cam.eulerAngles;
+            Vector3 lookDir = _cam.eulerAngles;
             lookDir.y = Mathf.Round(lookDir.y / 90) * 90;
 
-            if (m_currentHorRail && m_currentVerRail)
+            if (_currentHorRail && _currentVerRail)
             {
                 if (lookDir.y == 270)
                 {
-                    m_rb.velocity = Vector3.left * m_speed;
+                    _rb.velocity = Vector3.left * _speed;
                 }
                 else if (lookDir.y == 90)
                 {
-                    m_rb.velocity = Vector3.right * m_speed;
+                    _rb.velocity = Vector3.right * _speed;
                 }
                 else if (lookDir.y == 0 || lookDir.y == 360)
                 {
-                    m_rb.velocity = m_upVector * m_speed;
+                    _rb.velocity = _upVector * _speed;
                 }
                 else if (lookDir.y == 180)
                 {
-                    m_rb.velocity = m_downVector * m_speed;
+                    _rb.velocity = _downVector * _speed;
                 }
             }
-            else if (m_currentHorRail != null)
+            else if (_currentHorRail != null)
             {
-                if (transform.position.z != m_currentHorRail.zClamp)
+				if (transform.position.z != _currentHorRail.zClamp)
                 {
                     Vector3 pos = transform.position;
-                    pos.z = m_currentHorRail.zClamp;
+                    pos.z = _currentHorRail.zClamp;
                     transform.position = pos;
                 }
 
                 if (lookDir.y == 270)
                 {
-                    m_rb.velocity = Vector3.left * m_speed;
+                    _rb.velocity = Vector3.left * _speed;
                 }
                 else if (lookDir.y == 90)
                 {
-                    m_rb.velocity = Vector3.right * m_speed;
+                    _rb.velocity = Vector3.right * _speed;
                 }
             }
-            else if (m_currentVerRail != null)
+            else if (_currentVerRail != null)
             {
-                if (transform.position.x != m_currentVerRail.xClamp)
+                if (transform.position.x != _currentVerRail.xClamp)
                 {
                     Vector3 pos = transform.position;
-                    pos.x = m_currentVerRail.xClamp;
+                    pos.x = _currentVerRail.xClamp;
                     transform.position = pos;
                 }
 
                 if (lookDir.y == 0 || lookDir.y == 360)
                 {
-                    m_rb.velocity = m_upVector * m_speed;
+                    _rb.velocity = _upVector * _speed;
                 }
                 else if (lookDir.y == 180)
                 {
-                    m_rb.velocity = m_downVector * m_speed;
+                    _rb.velocity = _downVector * _speed;
                 }
             }
         }
     }
+
+	private void Dash()
+	{
+		if(!canDash)
+			return;
+
+		if(_dashTime >= _dashElapsedTime)
+		{
+			GameManager.instance.JustDashed();
+			_dashing = true;
+			_speed = _dashSpeed;
+			_moving = true;
+			_dashElapsedTime += Time.deltaTime;
+		}
+		else
+		{
+			canDash = false;
+			_moving = false;
+			_dashing = false;
+			_dashElapsedTime = 0.0f;
+			StartCoroutine(CanDash());
+		}
+	}
 
     void OnTriggerEnter(Collider c)
     {
@@ -129,7 +201,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(c.gameObject);
             GameManager.instance.AddScore(50);
-            m_chaseModeCoroutine = StartCoroutine(ChaseMode());
+            _chaseModeCoroutine = StartCoroutine(ChaseMode());
         }
         else if (c.gameObject.tag == "Pellet")
         {
@@ -139,11 +211,11 @@ public class PlayerController : MonoBehaviour
 
         if (c.gameObject.tag == "HorizontalRail")
         {
-            m_currentHorRail = c.gameObject.GetComponent<RailInfo>();
+            _currentHorRail = c.gameObject.GetComponent<RailInfo>();
         }
         if (c.gameObject.tag == "VerticalRail")
         {
-            m_currentVerRail = c.gameObject.GetComponent<RailInfo>();
+            _currentVerRail = c.gameObject.GetComponent<RailInfo>();
         }
     }
 
@@ -151,11 +223,11 @@ public class PlayerController : MonoBehaviour
     {
         if (c.gameObject.tag == "HorizontalRail")
         {
-            m_currentHorRail = null;
+            _currentHorRail = null;
         }
         if (c.gameObject.tag == "VerticalRail")
         {
-            m_currentVerRail = null;
+            _currentVerRail = null;
         }
     }
 
@@ -166,8 +238,8 @@ public class PlayerController : MonoBehaviour
             if (chaseMode)
             {
                 c.gameObject.GetComponent<GhostController>().Respawn();
-                GameManager.instance.AddScore(m_blueGhostPoints);
-                m_blueGhostPoints *= 2;
+                GameManager.instance.AddScore(_blueGhostPoints);
+                _blueGhostPoints *= 2;
             }
             else
             {
@@ -179,8 +251,15 @@ public class PlayerController : MonoBehaviour
     private IEnumerator ChaseMode()
     {
         chaseMode = true;
-        yield return m_chaseModeTime;
+        yield return _chaseModeTime;
         chaseMode = false;
-        m_blueGhostPoints = 200;
+        _blueGhostPoints = 200;
     }
+
+	private IEnumerator CanDash()
+	{
+		GameManager.instance.DashRecover();
+		yield return _chaseModeTime;
+		canDash = true;
+	}
 }

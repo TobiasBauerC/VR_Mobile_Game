@@ -9,21 +9,21 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance = null; // creating single refrenceable instance
 
-    [SerializeField] private Text m_scoreTxt;
-    [SerializeField] private Text m_livesTxt;
-    [SerializeField] private Text m_readyTxt;
-    [SerializeField] private int m_oneUpGoal = 10000;
+	[SerializeField] private Text _scoreTxt;
+	[SerializeField] private Text _livesTxt;
+	[SerializeField] private Text _readyTxt;
+	[SerializeField] private Text _dashTxt;
+	[SerializeField] private int _oneUpGoal = 10000;
 
-    private int m_lives = 2;
-    private int m_oneUpScore = 0;
-    private bool m_lifeRecived = false;
-    private Vector3 m_spawnLocation = Vector3.zero;
-    private GameObject m_playerObject = null;
-    private PlayerController m_playerController = null;
-    private WaitForSeconds m_respawnWait = new WaitForSeconds(2.0f);
-    private WaitForSeconds m_startWait = new WaitForSeconds(3.0f);
-    private Coroutine m_respawnCor = null;
-    private Coroutine m_startCor = null;
+	private int _lives = 2;
+	private int _oneUpScore = 0;
+	private bool _lifeRecived = false;
+	private bool _dashRecovering = false;
+	private Vector3 _spawnLocation = Vector3.zero;
+	private GameObject _playerObject = null;
+	private PlayerController _playerController = null;
+	private WaitForSeconds _respawnWait = new WaitForSeconds(2.0f);
+	private WaitForSeconds _startWait = new WaitForSeconds(3.0f);
 
     public int score
     {
@@ -44,63 +44,99 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         // all the following will be moved into an "OnSceneLoad" function
-        m_playerObject = GameObject.FindGameObjectWithTag("Player");
-        m_playerController = m_playerObject.GetComponent<PlayerController>();
-        m_playerController.enabled = false;
-        m_spawnLocation = m_playerObject.transform.position;
+        _playerObject = GameObject.FindGameObjectWithTag("Player");
+        _playerController = _playerObject.GetComponent<PlayerController>();
+        _playerController.enabled = false;
+        _spawnLocation = _playerObject.transform.position;
         paused = false;
-        m_scoreTxt.text = string.Format("Score: {0}", score.ToString());
-        m_livesTxt.text = string.Format("Lives: {0}", m_lives.ToString());
-        m_readyTxt.text = READY_MSG;
-
-        m_startCor = StartCoroutine(StartPlayer());
+        _scoreTxt.text = string.Format("Score: {0}", score.ToString());
+        _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
+        _readyTxt.text = READY_MSG;
+		StartCoroutine(StartPlayer());
     }
 
+	void Update()
+	{
+		if(_dashRecovering)
+		{
+			Color newColor = _dashTxt.color;
+			newColor.g += 1.0f * 0.1f * Time.deltaTime;
+			_dashTxt.color = newColor;
+			if(_playerController.canDash == true)
+			{
+				StartCoroutine(DashRecovered());
+			}
+		}
+	}
+
     // used to add score as long as the given score is more than 0.
-    public void AddScore(int _amount)
+    public void AddScore(int amount)
     {
-        if (_amount > 0)
+        if (amount > 0)
         {
-            m_oneUpScore = score += _amount; // set OneUpScore and score at the ame time
-            if (!m_lifeRecived)
+            _oneUpScore = score += amount; // set OneUpScore and score at the ame time
+            if (!_lifeRecived)
                 OneUpCheck(); // call function that handles one up
-            m_scoreTxt.text = string.Format("Score: {0}", score.ToString());
+            _scoreTxt.text = string.Format("Score: {0}", score.ToString());
         }
     }
 
     // this checks to see if the player has enough score for an extra life
     private void OneUpCheck()
     {
-        if (m_oneUpScore >= m_oneUpGoal)
+        if (_oneUpScore >= _oneUpGoal)
         {
-            m_lives++;
-            m_lifeRecived = true;
-            m_livesTxt.text = string.Format("Lives: {0}", m_lives.ToString());
+            _lives++;
+            _lifeRecived = true;
+            _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
         }
     }
 
     public void PlayerHit()
     {
-        if (m_lives > 0)
-            m_lives--;
+        if (_lives > 0)
+            _lives--;
 
-        m_livesTxt.text = string.Format("Lives: {0}", m_lives.ToString());
-        m_respawnCor = StartCoroutine(RespawnPlayer());
+        _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
+        StartCoroutine(RespawnPlayer());
     }
 
+	public void JustDashed()
+	{
+		Debug.Log("JustDashed");
+		Color newColor = _dashTxt.color;
+		newColor.g = 0.0f;
+		_dashTxt.color = newColor;
+	}
+
+	public void DashRecover()
+	{
+		_dashRecovering = true;
+	}
+		
     private IEnumerator RespawnPlayer()
     {
-        m_playerController.enabled = false;
-        yield return m_respawnWait;
-        m_readyTxt.text = READY_MSG;
-        m_playerObject.transform.position = m_spawnLocation;
-        m_startCor = StartCoroutine(StartPlayer());
+        _playerController.enabled = false;
+        yield return _respawnWait;
+        _readyTxt.text = READY_MSG;
+        _playerObject.transform.position = _spawnLocation;
     }
 
     private IEnumerator StartPlayer()
     {
-        yield return m_startWait;
-        m_readyTxt.text = "";
-        m_playerController.enabled = true;
+        yield return _startWait;
+        _readyTxt.text = "";
+        _playerController.enabled = true;
     }
+	private IEnumerator DashRecovered()
+	{
+		Debug.Log("DashRecovered");
+		Color newColor = _dashTxt.color;
+		newColor.g = 1.0f;
+		_dashTxt.color = newColor;
+		_dashTxt.resizeTextMaxSize = 40;
+		_dashRecovering = false;
+		yield return new WaitForSeconds(0.1f);
+		_dashTxt.resizeTextMaxSize = 35;
+	}
 }

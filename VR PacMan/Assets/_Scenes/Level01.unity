@@ -231,8 +231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &3287433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -412,8 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &20301514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1147,10 +1147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de51182cba894d25ab2361695840ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_currentHorRail: {fileID: 0}
-  m_currentVerRail: {fileID: 0}
-  m_speed: 5
-  m_cam: {fileID: 0}
+  _normalSpeed: 5
+  _dashSpeed: 50
+  _tapTime: 0.1
+  _dashTime: 0.5
+  _cam: {fileID: 0}
 --- !u!54 &41377886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1523,8 +1524,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &57904637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1657,8 +1658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &59553607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4549,10 +4550,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48186112f6b94bb780d2263712617a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_scoreTxt: {fileID: 245938832}
-  m_livesTxt: {fileID: 1103467239}
-  m_readyTxt: {fileID: 117069548}
-  m_oneUpGoal: 10000
+  _scoreTxt: {fileID: 245938832}
+  _livesTxt: {fileID: 1103467239}
+  _readyTxt: {fileID: 117069548}
+  _dashTxt: {fileID: 824992508}
+  _oneUpGoal: 10000
 --- !u!4 &255416960
 Transform:
   m_ObjectHideFlags: 0
@@ -4577,8 +4579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cf1ef5d60da4a24b5a162a5c662399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_player: {fileID: 41377885}
-  m_ghosts: []
+  _player: {fileID: 41377885}
+  _ghosts: []
 --- !u!1 &266737100
 GameObject:
   m_ObjectHideFlags: 0
@@ -5179,8 +5181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &288556560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5240,8 +5242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &297134079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7448,8 +7450,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &470398937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8333,8 +8335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &545224241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9892,8 +9894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &623762417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10210,8 +10212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &639237317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10382,8 +10384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &650847843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10987,8 +10989,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &691595574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11305,8 +11307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &714598681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13044,6 +13046,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 818381306}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &824992506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 824992507}
+  - component: {fileID: 824992509}
+  - component: {fileID: 824992508}
+  m_Layer: 5
+  m_Name: DashText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &824992507
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824992506}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00012651901}
+  m_LocalScale: {x: 0.17307666, y: 0.17307658, z: 0.17307658}
+  m_Children: []
+  m_Father: {fileID: 918650645}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 9.999945, y: -10}
+  m_SizeDelta: {x: 200, y: 45.5}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &824992508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824992506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 35
+    m_Alignment: 3
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Dash
+--- !u!222 &824992509
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824992506}
 --- !u!1 &826073451
 GameObject:
   m_ObjectHideFlags: 0
@@ -14667,6 +14743,7 @@ RectTransform:
   - {fileID: 245938831}
   - {fileID: 1103467238}
   - {fileID: 117069547}
+  - {fileID: 824992507}
   m_Father: {fileID: 624159360}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16144,8 +16221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1025359259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18291,8 +18368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1150837152
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18909,8 +18986,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1203137983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22064,7 +22141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d7f8b8bde30418da4bf4d889d5eec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnPos: {fileID: 1239904038}
+  _spawnPos: {fileID: 1239904038}
 --- !u!23 &1367363784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22222,8 +22299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1374518881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25263,8 +25340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1517876674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25548,8 +25625,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1546401668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26067,8 +26144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!1 &1575472178
 GameObject:
   m_ObjectHideFlags: 0
@@ -26622,7 +26699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d7f8b8bde30418da4bf4d889d5eec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnPos: {fileID: 1239904038}
+  _spawnPos: {fileID: 1239904038}
 --- !u!23 &1604781794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26720,7 +26797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d7f8b8bde30418da4bf4d889d5eec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnPos: {fileID: 1239904038}
+  _spawnPos: {fileID: 1239904038}
 --- !u!23 &1606302283
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26818,8 +26895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1610366407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29543,8 +29620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1776896613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30602,7 +30679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d7f8b8bde30418da4bf4d889d5eec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnPos: {fileID: 1239904038}
+  _spawnPos: {fileID: 1239904038}
 --- !u!23 &1845711804
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30828,8 +30905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &1876389462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32275,8 +32352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &2005197177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33627,8 +33704,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &2101545910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33845,8 +33922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2338ea82df64549b33cc10dd117a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_xClamp: 0
-  m_zClamp: 0
+  _xClamp: 0
+  _zClamp: 0
 --- !u!65 &2109747644
 BoxCollider:
   m_ObjectHideFlags: 0
