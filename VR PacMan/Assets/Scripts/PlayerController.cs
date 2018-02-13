@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rb = null;
 	private WaitForSeconds _chaseModeTime = null;
-	private WaitForSeconds _dashCoolDown = null;
 	private Coroutine _chaseModeCoroutine = null;
 	private RailInfo _currentHorRail = null;
 	private RailInfo _currentVerRail = null;
@@ -38,7 +37,6 @@ public class PlayerController : MonoBehaviour
             _cam = Camera.main.transform;
 
         _chaseModeTime = new WaitForSeconds(10.0f);
-		_dashCoolDown = new WaitForSeconds(10.0f);
         chaseMode = false;
 		canDash = true;
     }
