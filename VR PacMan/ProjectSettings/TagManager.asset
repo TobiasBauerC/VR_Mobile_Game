@@ -9,6 +9,7 @@ TagManager:
   - Ghost
   - HorizontalRail
   - VerticalRail
+  - Portal
   layers:
   - Default
   - TransparentFX

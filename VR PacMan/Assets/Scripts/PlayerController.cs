@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rb = null;
 	private WaitForSeconds _chaseModeTime = null;
-	private Coroutine _chaseModeCoroutine = null;
 	private RailInfo _currentHorRail = null;
 	private RailInfo _currentVerRail = null;
 	private Vector3 _upVector = new Vector3(0, 0, 1);
@@ -225,7 +224,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(c.gameObject);
             GameManager.instance.AddScore(50);
-            _chaseModeCoroutine = StartCoroutine(ChaseMode());
+            StartCoroutine(ChaseMode());
         }
         else if (c.gameObject.tag == "Pellet")
         {
@@ -241,6 +240,15 @@ public class PlayerController : MonoBehaviour
         {
             _currentVerRail = c.gameObject.GetComponent<RailInfo>();
         }
+
+		if(c.gameObject.tag == "Portal")
+		{
+			PortalTeleport portal = c.gameObject.GetComponent<PortalTeleport>();
+			Vector3 newPos = transform.position;
+			newPos.x = portal.teleDestination.x;
+			newPos.z = portal.teleDestination.z;
+			transform.position = newPos;
+		}
     }
 
     void OnTriggerExit(Collider c)

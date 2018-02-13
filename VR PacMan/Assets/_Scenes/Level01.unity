@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 2764085}
   - component: {fileID: 2764084}
   - component: {fileID: 2764083}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (62)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 20688146}
   - component: {fileID: 20688145}
   - component: {fileID: 20688144}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (43)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 23383164}
   - component: {fileID: 23383163}
   - component: {fileID: 23383162}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (153)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 23979401}
   - component: {fileID: 23979400}
   - component: {fileID: 23979399}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (124)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -706,7 +706,7 @@ GameObject:
   - component: {fileID: 25210821}
   - component: {fileID: 25210820}
   - component: {fileID: 25210819}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (202)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -795,7 +795,7 @@ GameObject:
   - component: {fileID: 25438681}
   - component: {fileID: 25438680}
   - component: {fileID: 25438679}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (221)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 37848557}
   - component: {fileID: 37848556}
   - component: {fileID: 37848555}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (16)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 46409056}
   - component: {fileID: 46409055}
   - component: {fileID: 46409054}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (112)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1268,7 +1268,7 @@ GameObject:
   - component: {fileID: 46854412}
   - component: {fileID: 46854411}
   - component: {fileID: 46854410}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (162)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 48514731}
   - component: {fileID: 48514730}
   - component: {fileID: 48514729}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (75)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 58685148}
   - component: {fileID: 58685147}
   - component: {fileID: 58685146}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (188)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1705,7 +1705,7 @@ GameObject:
   - component: {fileID: 68390261}
   - component: {fileID: 68390260}
   - component: {fileID: 68390259}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (150)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1794,7 +1794,7 @@ GameObject:
   - component: {fileID: 68844528}
   - component: {fileID: 68844527}
   - component: {fileID: 68844526}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (126)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1883,7 +1883,7 @@ GameObject:
   - component: {fileID: 73614979}
   - component: {fileID: 73614978}
   - component: {fileID: 73614977}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (203)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -1972,7 +1972,7 @@ GameObject:
   - component: {fileID: 73786174}
   - component: {fileID: 73786173}
   - component: {fileID: 73786172}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (41)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2061,7 +2061,7 @@ GameObject:
   - component: {fileID: 74666958}
   - component: {fileID: 74666957}
   - component: {fileID: 74666956}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (31)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2150,7 +2150,7 @@ GameObject:
   - component: {fileID: 83828435}
   - component: {fileID: 83828434}
   - component: {fileID: 83828433}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (24)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2227,6 +2227,91 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 83828431}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &88575220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1519786631810050, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 88575221}
+  - component: {fileID: 88575224}
+  - component: {fileID: 88575223}
+  - component: {fileID: 88575222}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &88575221
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4232250046313510, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88575220}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0.045976873, y: 0, z: 0.03225803}
+  m_LocalScale: {x: 1, y: 0.99703836, z: -1}
+  m_Children: []
+  m_Father: {fileID: 152417438}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 270, y: 270, z: 0}
+--- !u!81 &88575222
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 81437383823385358, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88575220}
+  m_Enabled: 0
+--- !u!124 &88575223
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 124191159270043480, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88575220}
+  m_Enabled: 1
+--- !u!20 &88575224
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 20466955826868946, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88575220}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: 6a374e03247be430ba25c034c1003cc2, type: 2}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &94256986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,7 +2324,7 @@ GameObject:
   - component: {fileID: 94256990}
   - component: {fileID: 94256989}
   - component: {fileID: 94256988}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (224)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2328,7 +2413,7 @@ GameObject:
   - component: {fileID: 105147337}
   - component: {fileID: 105147336}
   - component: {fileID: 105147335}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (207)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2417,7 +2502,7 @@ GameObject:
   - component: {fileID: 112533602}
   - component: {fileID: 112533601}
   - component: {fileID: 112533600}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (216)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2580,7 +2665,7 @@ GameObject:
   - component: {fileID: 126416440}
   - component: {fileID: 126416439}
   - component: {fileID: 126416438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (163)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2757,7 +2842,7 @@ GameObject:
   - component: {fileID: 131782617}
   - component: {fileID: 131782616}
   - component: {fileID: 131782615}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (147)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2890,7 +2975,7 @@ GameObject:
   - component: {fileID: 149794273}
   - component: {fileID: 149794272}
   - component: {fileID: 149794271}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (154)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -2967,6 +3052,100 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 149794269}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &152417434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1468137662051214, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 152417438}
+  - component: {fileID: 152417437}
+  - component: {fileID: 152417436}
+  - component: {fileID: 152417435}
+  m_Layer: 0
+  m_Name: Portal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &152417435
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23917857989409690, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 152417434}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: a4058bac8b8714d3b9fddc3cf4d0b106, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &152417436
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 64862551668731052, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 152417434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &152417437
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33967129941661136, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 152417434}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &152417438
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 152417434}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 28.5, y: 2.356, z: 1.56}
+  m_LocalScale: {x: 0.5465022, y: 1, z: -0.62000006}
+  m_Children:
+  - {fileID: 88575221}
+  - {fileID: 205851752}
+  - {fileID: 1150790946}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &153036120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,7 +3202,7 @@ GameObject:
   - component: {fileID: 153485393}
   - component: {fileID: 153485392}
   - component: {fileID: 153485391}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (226)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -3112,7 +3291,7 @@ GameObject:
   - component: {fileID: 153959176}
   - component: {fileID: 153959175}
   - component: {fileID: 153959174}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (80)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -3201,7 +3380,7 @@ GameObject:
   - component: {fileID: 156940254}
   - component: {fileID: 156940253}
   - component: {fileID: 156940252}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (225)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -3458,7 +3637,7 @@ GameObject:
   - component: {fileID: 168897238}
   - component: {fileID: 168897237}
   - component: {fileID: 168897236}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (155)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -3635,7 +3814,7 @@ GameObject:
   - component: {fileID: 176147445}
   - component: {fileID: 176147444}
   - component: {fileID: 176147443}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (90)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -3796,6 +3975,60 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 203462725}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &205851751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 205851752}
+  - component: {fileID: 205851753}
+  - component: {fileID: 205851754}
+  m_Layer: 0
+  m_Name: ActiveTele
+  m_TagString: Portal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205851752
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205851751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 152417438}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &205851753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205851751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.616304, y: 1, z: 9.937806}
+  m_Center: {x: 0.5331531, y: 5.8789423e-16, z: 0.27533305}
+--- !u!114 &205851754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205851751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a7f4b1d542c4342a580b6db5350c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _teleDestination: {fileID: 573764722}
 --- !u!1 &206470992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,7 +4041,7 @@ GameObject:
   - component: {fileID: 206470996}
   - component: {fileID: 206470995}
   - component: {fileID: 206470994}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (33)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -3897,7 +4130,7 @@ GameObject:
   - component: {fileID: 220938459}
   - component: {fileID: 220938458}
   - component: {fileID: 220938457}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (56)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -4030,7 +4263,7 @@ GameObject:
   - component: {fileID: 228212229}
   - component: {fileID: 228212228}
   - component: {fileID: 228212227}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (118)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -4371,7 +4604,7 @@ GameObject:
   - component: {fileID: 241990415}
   - component: {fileID: 241990414}
   - component: {fileID: 241990413}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (116)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -4593,7 +4826,7 @@ GameObject:
   - component: {fileID: 266737104}
   - component: {fileID: 266737103}
   - component: {fileID: 266737102}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (129)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -4812,7 +5045,7 @@ GameObject:
   - component: {fileID: 269361874}
   - component: {fileID: 269361873}
   - component: {fileID: 269361872}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (7)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -4985,7 +5218,7 @@ GameObject:
   - component: {fileID: 275386619}
   - component: {fileID: 275386618}
   - component: {fileID: 275386617}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (86)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -5074,7 +5307,7 @@ GameObject:
   - component: {fileID: 282920931}
   - component: {fileID: 282920930}
   - component: {fileID: 282920929}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (210)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -5457,7 +5690,7 @@ GameObject:
   - component: {fileID: 308033223}
   - component: {fileID: 308033222}
   - component: {fileID: 308033221}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (214)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -5678,7 +5911,7 @@ GameObject:
   - component: {fileID: 339044004}
   - component: {fileID: 339044003}
   - component: {fileID: 339044002}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (140)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -5755,6 +5988,60 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 339044000}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &342450466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 342450467}
+  - component: {fileID: 342450468}
+  - component: {fileID: 342450469}
+  m_Layer: 0
+  m_Name: ActiveTele
+  m_TagString: Portal
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &342450467
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342450466}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 1.99, z: 0}
+  m_LocalScale: {x: 0.88194823, y: 1, z: -1.1487497}
+  m_Children: []
+  m_Father: {fileID: 1467990212}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &342450468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342450466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.616304, y: 1, z: 9.937806}
+  m_Center: {x: 0.5331531, y: 5.8789423e-16, z: 0.27533305}
+--- !u!114 &342450469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342450466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a7f4b1d542c4342a580b6db5350c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _teleDestination: {fileID: 1150790946}
 --- !u!1 &349814557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5895,7 +6182,7 @@ GameObject:
   - component: {fileID: 373444867}
   - component: {fileID: 373444866}
   - component: {fileID: 373444865}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (189)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -5984,7 +6271,7 @@ GameObject:
   - component: {fileID: 374085596}
   - component: {fileID: 374085595}
   - component: {fileID: 374085594}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (94)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6073,7 +6360,7 @@ GameObject:
   - component: {fileID: 375207011}
   - component: {fileID: 375207010}
   - component: {fileID: 375207009}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (38)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6162,7 +6449,7 @@ GameObject:
   - component: {fileID: 395230367}
   - component: {fileID: 395230366}
   - component: {fileID: 395230365}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (171)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6295,7 +6582,7 @@ GameObject:
   - component: {fileID: 406858722}
   - component: {fileID: 406858721}
   - component: {fileID: 406858720}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (132)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6417,7 +6704,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1895525574065796, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
@@ -6483,7 +6770,7 @@ GameObject:
   - component: {fileID: 416111194}
   - component: {fileID: 416111193}
   - component: {fileID: 416111192}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (205)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6572,7 +6859,7 @@ GameObject:
   - component: {fileID: 417530992}
   - component: {fileID: 417530991}
   - component: {fileID: 417530990}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (48)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6661,7 +6948,7 @@ GameObject:
   - component: {fileID: 422319308}
   - component: {fileID: 422319307}
   - component: {fileID: 422319306}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (130)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6750,7 +7037,7 @@ GameObject:
   - component: {fileID: 430363415}
   - component: {fileID: 430363414}
   - component: {fileID: 430363413}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (53)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6839,7 +7126,7 @@ GameObject:
   - component: {fileID: 433679535}
   - component: {fileID: 433679534}
   - component: {fileID: 433679533}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (65)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -6928,7 +7215,7 @@ GameObject:
   - component: {fileID: 433687617}
   - component: {fileID: 433687616}
   - component: {fileID: 433687615}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (100)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -7017,7 +7304,7 @@ GameObject:
   - component: {fileID: 436462813}
   - component: {fileID: 436462812}
   - component: {fileID: 436462811}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (82)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -7194,7 +7481,7 @@ GameObject:
   - component: {fileID: 458268085}
   - component: {fileID: 458268084}
   - component: {fileID: 458268083}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (133)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -7327,7 +7614,7 @@ GameObject:
   - component: {fileID: 469969041}
   - component: {fileID: 469969040}
   - component: {fileID: 469969039}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (166)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -7651,7 +7938,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.399
+      value: 2.251
       objectReference: {fileID: 0}
     - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7689,23 +7976,37 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 8400000, guid: 11196e10f684a4256982aa540fe0fcfa, type: 2}
+      objectReference: {fileID: 8400000, guid: e70959a29d7af461990bbaf9946f763b, type: 2}
     - target: {fileID: 23917857989409690, guid: 028a87f1e18074d18b689a4ab9f07de4,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b32b438e0229b48ec8b6c4e58768679d, type: 2}
+      objectReference: {fileID: 2100000, guid: e51188acd1375490aa9ef54a1e2a7719, type: 2}
     - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.5901429
+      value: 0.6196515
       objectReference: {fileID: 0}
     - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.539717
+      value: 0.53971726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232250046313510, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 20466955826868946, guid: 028a87f1e18074d18b689a4ab9f07de4,
+        type: 2}
+      propertyPath: m_TargetEye
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 81437383823385358, guid: 028a87f1e18074d18b689a4ab9f07de4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
@@ -7722,7 +8023,7 @@ GameObject:
   - component: {fileID: 501613619}
   - component: {fileID: 501613618}
   - component: {fileID: 501613617}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (35)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -7811,7 +8112,7 @@ GameObject:
   - component: {fileID: 506688147}
   - component: {fileID: 506688146}
   - component: {fileID: 506688145}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (55)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -7900,7 +8201,7 @@ GameObject:
   - component: {fileID: 508892961}
   - component: {fileID: 508892960}
   - component: {fileID: 508892959}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (219)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8033,7 +8334,7 @@ GameObject:
   - component: {fileID: 520371392}
   - component: {fileID: 520371391}
   - component: {fileID: 520371390}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (63)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8122,7 +8423,7 @@ GameObject:
   - component: {fileID: 523938398}
   - component: {fileID: 523938397}
   - component: {fileID: 523938396}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (146)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8211,7 +8512,7 @@ GameObject:
   - component: {fileID: 526352798}
   - component: {fileID: 526352797}
   - component: {fileID: 526352796}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (167)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8300,7 +8601,7 @@ GameObject:
   - component: {fileID: 537347208}
   - component: {fileID: 537347207}
   - component: {fileID: 537347206}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (141)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8452,7 +8753,7 @@ GameObject:
   - component: {fileID: 545404123}
   - component: {fileID: 545404122}
   - component: {fileID: 545404121}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (84)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8541,7 +8842,7 @@ GameObject:
   - component: {fileID: 545423496}
   - component: {fileID: 545423495}
   - component: {fileID: 545423494}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (145)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8630,7 +8931,7 @@ GameObject:
   - component: {fileID: 548278458}
   - component: {fileID: 548278457}
   - component: {fileID: 548278456}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (101)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8763,7 +9064,7 @@ GameObject:
   - component: {fileID: 559312540}
   - component: {fileID: 559312539}
   - component: {fileID: 559312538}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (26)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8852,7 +9153,7 @@ GameObject:
   - component: {fileID: 559680470}
   - component: {fileID: 559680469}
   - component: {fileID: 559680468}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (204)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -8985,7 +9286,7 @@ GameObject:
   - component: {fileID: 560315435}
   - component: {fileID: 560315434}
   - component: {fileID: 560315433}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (4)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -9074,7 +9375,7 @@ GameObject:
   - component: {fileID: 560410976}
   - component: {fileID: 560410975}
   - component: {fileID: 560410974}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (5)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -9163,7 +9464,7 @@ GameObject:
   - component: {fileID: 566868625}
   - component: {fileID: 566868624}
   - component: {fileID: 566868623}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (175)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -9252,7 +9553,7 @@ GameObject:
   - component: {fileID: 569008745}
   - component: {fileID: 569008744}
   - component: {fileID: 569008743}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (182)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -9329,6 +9630,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 569008741}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &573764721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 573764722}
+  m_Layer: 0
+  m_Name: 'TeleDestinaton '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &573764722
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 573764721}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 7.79, z: 0}
+  m_LocalScale: {x: 0.88194823, y: 1, z: -1.1487497}
+  m_Children: []
+  m_Father: {fileID: 1467990212}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &574386283 stripped
 Transform:
   m_PrefabParentObject: {fileID: 1820761120, guid: 34c21f523e72f45509a4e37ed0293c3b,
@@ -9602,7 +9931,7 @@ GameObject:
   - component: {fileID: 598967947}
   - component: {fileID: 598967946}
   - component: {fileID: 598967945}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (149)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -9691,7 +10020,7 @@ GameObject:
   - component: {fileID: 603370350}
   - component: {fileID: 603370349}
   - component: {fileID: 603370348}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (194)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -10093,7 +10422,7 @@ GameObject:
   - component: {fileID: 628542006}
   - component: {fileID: 628542005}
   - component: {fileID: 628542004}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (14)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -10331,7 +10660,7 @@ GameObject:
   - component: {fileID: 643263401}
   - component: {fileID: 643263400}
   - component: {fileID: 643263399}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (22)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -10483,7 +10812,7 @@ GameObject:
   - component: {fileID: 652177365}
   - component: {fileID: 652177364}
   - component: {fileID: 652177363}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (218)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -10671,7 +11000,7 @@ GameObject:
   - component: {fileID: 672819467}
   - component: {fileID: 672819466}
   - component: {fileID: 672819465}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (198)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -10760,7 +11089,7 @@ GameObject:
   - component: {fileID: 674099255}
   - component: {fileID: 674099254}
   - component: {fileID: 674099253}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (29)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -10849,7 +11178,7 @@ GameObject:
   - component: {fileID: 688354217}
   - component: {fileID: 688354216}
   - component: {fileID: 688354215}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (111)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -10938,7 +11267,7 @@ GameObject:
   - component: {fileID: 689569214}
   - component: {fileID: 689569213}
   - component: {fileID: 689569212}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (32)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -11172,7 +11501,7 @@ GameObject:
   - component: {fileID: 705699875}
   - component: {fileID: 705699874}
   - component: {fileID: 705699873}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (115)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -11406,7 +11735,7 @@ GameObject:
   - component: {fileID: 715662639}
   - component: {fileID: 715662638}
   - component: {fileID: 715662637}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (178)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -11579,7 +11908,7 @@ GameObject:
   - component: {fileID: 723027329}
   - component: {fileID: 723027328}
   - component: {fileID: 723027327}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (187)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -11668,7 +11997,7 @@ GameObject:
   - component: {fileID: 732992934}
   - component: {fileID: 732992933}
   - component: {fileID: 732992932}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (89)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -11757,7 +12086,7 @@ GameObject:
   - component: {fileID: 735295474}
   - component: {fileID: 735295473}
   - component: {fileID: 735295472}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (113)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -11890,7 +12219,7 @@ GameObject:
   - component: {fileID: 744502769}
   - component: {fileID: 744502768}
   - component: {fileID: 744502767}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (199)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -11979,7 +12308,7 @@ GameObject:
   - component: {fileID: 747592058}
   - component: {fileID: 747592057}
   - component: {fileID: 747592056}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (99)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12152,7 +12481,7 @@ GameObject:
   - component: {fileID: 757451405}
   - component: {fileID: 757451404}
   - component: {fileID: 757451403}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (139)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12241,7 +12570,7 @@ GameObject:
   - component: {fileID: 759709504}
   - component: {fileID: 759709503}
   - component: {fileID: 759709502}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (92)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12374,7 +12703,7 @@ GameObject:
   - component: {fileID: 768944336}
   - component: {fileID: 768944335}
   - component: {fileID: 768944334}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (77)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12463,7 +12792,7 @@ GameObject:
   - component: {fileID: 770345618}
   - component: {fileID: 770345617}
   - component: {fileID: 770345616}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (173)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12596,7 +12925,7 @@ GameObject:
   - component: {fileID: 782199204}
   - component: {fileID: 782199203}
   - component: {fileID: 782199202}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (58)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12685,7 +13014,7 @@ GameObject:
   - component: {fileID: 809894669}
   - component: {fileID: 809894668}
   - component: {fileID: 809894667}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (241)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12774,7 +13103,7 @@ GameObject:
   - component: {fileID: 812492972}
   - component: {fileID: 812492971}
   - component: {fileID: 812492970}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (117)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12863,7 +13192,7 @@ GameObject:
   - component: {fileID: 814343028}
   - component: {fileID: 814343027}
   - component: {fileID: 814343026}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (42)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -12952,7 +13281,7 @@ GameObject:
   - component: {fileID: 814951082}
   - component: {fileID: 814951081}
   - component: {fileID: 814951080}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (97)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -13041,7 +13370,7 @@ GameObject:
   - component: {fileID: 818381310}
   - component: {fileID: 818381309}
   - component: {fileID: 818381308}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (228)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -13204,7 +13533,7 @@ GameObject:
   - component: {fileID: 826073455}
   - component: {fileID: 826073454}
   - component: {fileID: 826073453}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (197)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -13293,7 +13622,7 @@ GameObject:
   - component: {fileID: 828545083}
   - component: {fileID: 828545082}
   - component: {fileID: 828545081}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (123)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -13550,7 +13879,7 @@ GameObject:
   - component: {fileID: 831339905}
   - component: {fileID: 831339904}
   - component: {fileID: 831339903}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (67)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -13683,7 +14012,7 @@ GameObject:
   - component: {fileID: 845060691}
   - component: {fileID: 845060690}
   - component: {fileID: 845060689}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (72)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -13772,7 +14101,7 @@ GameObject:
   - component: {fileID: 850316669}
   - component: {fileID: 850316668}
   - component: {fileID: 850316667}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (200)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -13861,7 +14190,7 @@ GameObject:
   - component: {fileID: 871121361}
   - component: {fileID: 871121360}
   - component: {fileID: 871121359}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (95)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -14078,7 +14407,7 @@ GameObject:
   - component: {fileID: 878416714}
   - component: {fileID: 878416713}
   - component: {fileID: 878416712}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (69)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -14167,7 +14496,7 @@ GameObject:
   - component: {fileID: 882550939}
   - component: {fileID: 882550938}
   - component: {fileID: 882550937}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (227)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -14256,7 +14585,7 @@ GameObject:
   - component: {fileID: 887615763}
   - component: {fileID: 887615762}
   - component: {fileID: 887615761}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (23)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -14345,7 +14674,7 @@ GameObject:
   - component: {fileID: 889607458}
   - component: {fileID: 889607457}
   - component: {fileID: 889607456}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (184)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -14434,7 +14763,7 @@ GameObject:
   - component: {fileID: 893341714}
   - component: {fileID: 893341713}
   - component: {fileID: 893341712}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (40)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -14880,7 +15209,7 @@ GameObject:
   - component: {fileID: 922704532}
   - component: {fileID: 922704531}
   - component: {fileID: 922704530}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (102)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -15013,7 +15342,7 @@ GameObject:
   - component: {fileID: 939192582}
   - component: {fileID: 939192581}
   - component: {fileID: 939192580}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (121)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -15230,7 +15559,7 @@ GameObject:
   - component: {fileID: 951616588}
   - component: {fileID: 951616587}
   - component: {fileID: 951616586}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (81)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -15491,7 +15820,7 @@ GameObject:
   - component: {fileID: 999315260}
   - component: {fileID: 999315259}
   - component: {fileID: 999315258}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (143)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -15580,7 +15909,7 @@ GameObject:
   - component: {fileID: 1005410010}
   - component: {fileID: 1005410009}
   - component: {fileID: 1005410008}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (125)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -15669,7 +15998,7 @@ GameObject:
   - component: {fileID: 1007067356}
   - component: {fileID: 1007067355}
   - component: {fileID: 1007067354}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (159)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -16097,7 +16426,7 @@ GameObject:
   - component: {fileID: 1023770660}
   - component: {fileID: 1023770659}
   - component: {fileID: 1023770658}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (233)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -16186,7 +16515,7 @@ GameObject:
   - component: {fileID: 1024096673}
   - component: {fileID: 1024096672}
   - component: {fileID: 1024096671}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (37)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -16512,7 +16841,7 @@ GameObject:
   - component: {fileID: 1035735437}
   - component: {fileID: 1035735436}
   - component: {fileID: 1035735435}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (165)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -16601,7 +16930,7 @@ GameObject:
   - component: {fileID: 1036273401}
   - component: {fileID: 1036273400}
   - component: {fileID: 1036273399}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (215)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -16778,7 +17107,7 @@ GameObject:
   - component: {fileID: 1051558983}
   - component: {fileID: 1051558982}
   - component: {fileID: 1051558981}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (157)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -16867,7 +17196,7 @@ GameObject:
   - component: {fileID: 1052228877}
   - component: {fileID: 1052228876}
   - component: {fileID: 1052228875}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (170)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -16956,7 +17285,7 @@ GameObject:
   - component: {fileID: 1059314097}
   - component: {fileID: 1059314096}
   - component: {fileID: 1059314095}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (93)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -17173,7 +17502,7 @@ GameObject:
   - component: {fileID: 1067967593}
   - component: {fileID: 1067967592}
   - component: {fileID: 1067967591}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (21)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -17426,7 +17755,7 @@ GameObject:
   - component: {fileID: 1084027547}
   - component: {fileID: 1084027546}
   - component: {fileID: 1084027545}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (3)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -17515,7 +17844,7 @@ GameObject:
   - component: {fileID: 1093387106}
   - component: {fileID: 1093387105}
   - component: {fileID: 1093387104}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (66)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -17648,7 +17977,7 @@ GameObject:
   - component: {fileID: 1095935395}
   - component: {fileID: 1095935394}
   - component: {fileID: 1095935393}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (60)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -17737,7 +18066,7 @@ GameObject:
   - component: {fileID: 1095992858}
   - component: {fileID: 1095992857}
   - component: {fileID: 1095992856}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (83)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -18200,7 +18529,7 @@ GameObject:
   - component: {fileID: 1128219371}
   - component: {fileID: 1128219370}
   - component: {fileID: 1128219369}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (208)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -18289,7 +18618,7 @@ GameObject:
   - component: {fileID: 1137871932}
   - component: {fileID: 1137871931}
   - component: {fileID: 1137871930}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (20)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -18410,6 +18739,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 10, z: 1}
   m_Center: {x: 0, y: 5, z: 0}
+--- !u!1 &1150790945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1150790946}
+  m_Layer: 0
+  m_Name: TeleDestinaton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150790946
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150790945}
+  m_LocalRotation: {x: 0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 8.49, z: 0.5161289}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 152417438}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1150837150
 GameObject:
   m_ObjectHideFlags: 0
@@ -18611,7 +18968,7 @@ GameObject:
   - component: {fileID: 1167345483}
   - component: {fileID: 1167345482}
   - component: {fileID: 1167345481}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (177)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -18697,7 +19054,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1021068383}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18844,7 +19201,7 @@ GameObject:
   - component: {fileID: 1198390843}
   - component: {fileID: 1198390842}
   - component: {fileID: 1198390841}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (88)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -18933,7 +19290,7 @@ GameObject:
   - component: {fileID: 1200973613}
   - component: {fileID: 1200973612}
   - component: {fileID: 1200973611}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (70)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19085,7 +19442,7 @@ GameObject:
   - component: {fileID: 1203406823}
   - component: {fileID: 1203406822}
   - component: {fileID: 1203406821}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (64)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19174,7 +19531,7 @@ GameObject:
   - component: {fileID: 1206569166}
   - component: {fileID: 1206569165}
   - component: {fileID: 1206569164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (158)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19347,7 +19704,7 @@ GameObject:
   - component: {fileID: 1211523784}
   - component: {fileID: 1211523783}
   - component: {fileID: 1211523782}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (19)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19436,7 +19793,7 @@ GameObject:
   - component: {fileID: 1213528377}
   - component: {fileID: 1213528376}
   - component: {fileID: 1213528375}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (106)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19525,7 +19882,7 @@ GameObject:
   - component: {fileID: 1218010363}
   - component: {fileID: 1218010362}
   - component: {fileID: 1218010361}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (136)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19656,7 +20013,7 @@ GameObject:
   - component: {fileID: 1224352364}
   - component: {fileID: 1224352363}
   - component: {fileID: 1224352362}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (25)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19745,7 +20102,7 @@ GameObject:
   - component: {fileID: 1224661717}
   - component: {fileID: 1224661716}
   - component: {fileID: 1224661715}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (74)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19834,7 +20191,7 @@ GameObject:
   - component: {fileID: 1225444491}
   - component: {fileID: 1225444490}
   - component: {fileID: 1225444489}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (240)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -19972,7 +20329,7 @@ GameObject:
   - component: {fileID: 1236585959}
   - component: {fileID: 1236585958}
   - component: {fileID: 1236585957}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (108)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20089,7 +20446,7 @@ GameObject:
   - component: {fileID: 1240881075}
   - component: {fileID: 1240881074}
   - component: {fileID: 1240881073}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (186)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20178,7 +20535,7 @@ GameObject:
   - component: {fileID: 1243476294}
   - component: {fileID: 1243476293}
   - component: {fileID: 1243476292}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (238)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20267,7 +20624,7 @@ GameObject:
   - component: {fileID: 1245969735}
   - component: {fileID: 1245969734}
   - component: {fileID: 1245969733}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (237)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20356,7 +20713,7 @@ GameObject:
   - component: {fileID: 1252217574}
   - component: {fileID: 1252217573}
   - component: {fileID: 1252217572}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (174)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20445,7 +20802,7 @@ GameObject:
   - component: {fileID: 1252625801}
   - component: {fileID: 1252625800}
   - component: {fileID: 1252625799}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (1)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20534,7 +20891,7 @@ GameObject:
   - component: {fileID: 1257205144}
   - component: {fileID: 1257205143}
   - component: {fileID: 1257205142}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (46)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20623,7 +20980,7 @@ GameObject:
   - component: {fileID: 1265350387}
   - component: {fileID: 1265350386}
   - component: {fileID: 1265350385}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (135)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20756,7 +21113,7 @@ GameObject:
   - component: {fileID: 1270143620}
   - component: {fileID: 1270143619}
   - component: {fileID: 1270143618}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (54)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20845,7 +21202,7 @@ GameObject:
   - component: {fileID: 1286380650}
   - component: {fileID: 1286380649}
   - component: {fileID: 1286380648}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (191)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -20934,7 +21291,7 @@ GameObject:
   - component: {fileID: 1289419370}
   - component: {fileID: 1289419369}
   - component: {fileID: 1289419368}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (148)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -21023,7 +21380,7 @@ GameObject:
   - component: {fileID: 1292012521}
   - component: {fileID: 1292012520}
   - component: {fileID: 1292012519}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (168)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -21196,7 +21553,7 @@ GameObject:
   - component: {fileID: 1296089965}
   - component: {fileID: 1296089964}
   - component: {fileID: 1296089963}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (76)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -21285,7 +21642,7 @@ GameObject:
   - component: {fileID: 1300107258}
   - component: {fileID: 1300107257}
   - component: {fileID: 1300107256}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (230)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -21374,7 +21731,7 @@ GameObject:
   - component: {fileID: 1303851978}
   - component: {fileID: 1303851977}
   - component: {fileID: 1303851976}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (185)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -21463,7 +21820,7 @@ GameObject:
   - component: {fileID: 1305198231}
   - component: {fileID: 1305198230}
   - component: {fileID: 1305198229}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (235)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -21552,7 +21909,7 @@ GameObject:
   - component: {fileID: 1314653452}
   - component: {fileID: 1314653451}
   - component: {fileID: 1314653450}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (52)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -21641,7 +21998,7 @@ GameObject:
   - component: {fileID: 1321151653}
   - component: {fileID: 1321151652}
   - component: {fileID: 1321151651}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (28)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -22017,7 +22374,7 @@ GameObject:
   - component: {fileID: 1355598787}
   - component: {fileID: 1355598786}
   - component: {fileID: 1355598785}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (27)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -22106,7 +22463,7 @@ GameObject:
   - component: {fileID: 1362328682}
   - component: {fileID: 1362328681}
   - component: {fileID: 1362328680}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (78)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -22398,7 +22755,7 @@ GameObject:
   - component: {fileID: 1380234671}
   - component: {fileID: 1380234670}
   - component: {fileID: 1380234669}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (61)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -22487,7 +22844,7 @@ GameObject:
   - component: {fileID: 1381804871}
   - component: {fileID: 1381804870}
   - component: {fileID: 1381804869}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (2)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -22660,7 +23017,7 @@ GameObject:
   - component: {fileID: 1386106260}
   - component: {fileID: 1386106259}
   - component: {fileID: 1386106258}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (180)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -22835,7 +23192,7 @@ GameObject:
   - component: {fileID: 1395415268}
   - component: {fileID: 1395415267}
   - component: {fileID: 1395415266}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (44)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -22924,7 +23281,7 @@ GameObject:
   - component: {fileID: 1397240664}
   - component: {fileID: 1397240663}
   - component: {fileID: 1397240662}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (6)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -23013,7 +23370,7 @@ GameObject:
   - component: {fileID: 1399649929}
   - component: {fileID: 1399649928}
   - component: {fileID: 1399649927}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (45)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -23102,7 +23459,7 @@ GameObject:
   - component: {fileID: 1406149285}
   - component: {fileID: 1406149284}
   - component: {fileID: 1406149283}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (47)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -23403,7 +23760,7 @@ GameObject:
   - component: {fileID: 1418948357}
   - component: {fileID: 1418948356}
   - component: {fileID: 1418948355}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (79)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -23576,7 +23933,7 @@ GameObject:
   - component: {fileID: 1428516925}
   - component: {fileID: 1428516924}
   - component: {fileID: 1428516923}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (17)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -23665,7 +24022,7 @@ GameObject:
   - component: {fileID: 1429372540}
   - component: {fileID: 1429372539}
   - component: {fileID: 1429372538}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (236)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -23754,7 +24111,7 @@ GameObject:
   - component: {fileID: 1431075408}
   - component: {fileID: 1431075407}
   - component: {fileID: 1431075406}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (12)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -23927,7 +24284,7 @@ GameObject:
   - component: {fileID: 1436627496}
   - component: {fileID: 1436627495}
   - component: {fileID: 1436627494}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (18)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24016,7 +24373,7 @@ GameObject:
   - component: {fileID: 1438076065}
   - component: {fileID: 1438076064}
   - component: {fileID: 1438076063}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (181)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24105,7 +24462,7 @@ GameObject:
   - component: {fileID: 1442116920}
   - component: {fileID: 1442116919}
   - component: {fileID: 1442116918}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (9)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24194,7 +24551,7 @@ GameObject:
   - component: {fileID: 1457718510}
   - component: {fileID: 1457718509}
   - component: {fileID: 1457718508}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (144)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24271,6 +24628,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1457718506}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1467990212 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 490444091}
 --- !u!1 &1470441817
 GameObject:
   m_ObjectHideFlags: 0
@@ -24411,7 +24773,7 @@ GameObject:
   - component: {fileID: 1474736484}
   - component: {fileID: 1474736483}
   - component: {fileID: 1474736482}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (30)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24500,7 +24862,7 @@ GameObject:
   - component: {fileID: 1478724868}
   - component: {fileID: 1478724867}
   - component: {fileID: 1478724866}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (179)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24673,7 +25035,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1490561093}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PowerPellets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24709,7 +25071,7 @@ GameObject:
   - component: {fileID: 1491053355}
   - component: {fileID: 1491053354}
   - component: {fileID: 1491053353}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (195)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24798,7 +25160,7 @@ GameObject:
   - component: {fileID: 1493268537}
   - component: {fileID: 1493268536}
   - component: {fileID: 1493268535}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (57)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24887,7 +25249,7 @@ GameObject:
   - component: {fileID: 1494279594}
   - component: {fileID: 1494279593}
   - component: {fileID: 1494279592}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (68)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -24976,7 +25338,7 @@ GameObject:
   - component: {fileID: 1502453193}
   - component: {fileID: 1502453192}
   - component: {fileID: 1502453191}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (103)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25065,7 +25427,7 @@ GameObject:
   - component: {fileID: 1506141496}
   - component: {fileID: 1506141495}
   - component: {fileID: 1506141494}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (50)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25154,7 +25516,7 @@ GameObject:
   - component: {fileID: 1507163065}
   - component: {fileID: 1507163064}
   - component: {fileID: 1507163063}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (120)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25287,7 +25649,7 @@ GameObject:
   - component: {fileID: 1515855282}
   - component: {fileID: 1515855281}
   - component: {fileID: 1515855280}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (183)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25439,7 +25801,7 @@ GameObject:
   - component: {fileID: 1524046718}
   - component: {fileID: 1524046717}
   - component: {fileID: 1524046716}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (190)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25528,7 +25890,7 @@ GameObject:
   - component: {fileID: 1538048545}
   - component: {fileID: 1538048544}
   - component: {fileID: 1538048543}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (13)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25724,7 +26086,7 @@ GameObject:
   - component: {fileID: 1549186106}
   - component: {fileID: 1549186105}
   - component: {fileID: 1549186104}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (213)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25813,7 +26175,7 @@ GameObject:
   - component: {fileID: 1556063268}
   - component: {fileID: 1556063267}
   - component: {fileID: 1556063266}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (169)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25902,7 +26264,7 @@ GameObject:
   - component: {fileID: 1558938365}
   - component: {fileID: 1558938364}
   - component: {fileID: 1558938363}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (229)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -25991,7 +26353,7 @@ GameObject:
   - component: {fileID: 1561729758}
   - component: {fileID: 1561729757}
   - component: {fileID: 1561729756}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (134)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -26080,7 +26442,7 @@ GameObject:
   - component: {fileID: 1564258771}
   - component: {fileID: 1564258770}
   - component: {fileID: 1564258769}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (222)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -26314,7 +26676,7 @@ GameObject:
   - component: {fileID: 1576834636}
   - component: {fileID: 1576834635}
   - component: {fileID: 1576834634}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (104)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -26403,7 +26765,7 @@ GameObject:
   - component: {fileID: 1578851803}
   - component: {fileID: 1578851802}
   - component: {fileID: 1578851801}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (107)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -26620,7 +26982,7 @@ GameObject:
   - component: {fileID: 1596430469}
   - component: {fileID: 1596430468}
   - component: {fileID: 1596430467}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (161)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27144,7 +27506,7 @@ GameObject:
   - component: {fileID: 1622674648}
   - component: {fileID: 1622674647}
   - component: {fileID: 1622674646}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (217)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27233,7 +27595,7 @@ GameObject:
   - component: {fileID: 1625861553}
   - component: {fileID: 1625861552}
   - component: {fileID: 1625861551}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (98)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27318,7 +27680,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1631519533}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: AllPellets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27440,7 +27802,7 @@ GameObject:
   - component: {fileID: 1643464667}
   - component: {fileID: 1643464666}
   - component: {fileID: 1643464665}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (151)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27573,7 +27935,7 @@ GameObject:
   - component: {fileID: 1647421181}
   - component: {fileID: 1647421180}
   - component: {fileID: 1647421179}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (152)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27662,7 +28024,7 @@ GameObject:
   - component: {fileID: 1657474596}
   - component: {fileID: 1657474595}
   - component: {fileID: 1657474594}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (128)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27751,7 +28113,7 @@ GameObject:
   - component: {fileID: 1659249668}
   - component: {fileID: 1659249667}
   - component: {fileID: 1659249666}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (34)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27840,7 +28202,7 @@ GameObject:
   - component: {fileID: 1661481535}
   - component: {fileID: 1661481534}
   - component: {fileID: 1661481533}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (85)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -27973,7 +28335,7 @@ GameObject:
   - component: {fileID: 1665453918}
   - component: {fileID: 1665453917}
   - component: {fileID: 1665453916}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (211)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28062,7 +28424,7 @@ GameObject:
   - component: {fileID: 1667001312}
   - component: {fileID: 1667001311}
   - component: {fileID: 1667001310}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (8)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28151,7 +28513,7 @@ GameObject:
   - component: {fileID: 1679942002}
   - component: {fileID: 1679942001}
   - component: {fileID: 1679942000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (223)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28240,7 +28602,7 @@ GameObject:
   - component: {fileID: 1681451132}
   - component: {fileID: 1681451131}
   - component: {fileID: 1681451130}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (164)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28329,7 +28691,7 @@ GameObject:
   - component: {fileID: 1690206166}
   - component: {fileID: 1690206165}
   - component: {fileID: 1690206164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (87)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28418,7 +28780,7 @@ GameObject:
   - component: {fileID: 1699115180}
   - component: {fileID: 1699115179}
   - component: {fileID: 1699115178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (176)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28551,7 +28913,7 @@ GameObject:
   - component: {fileID: 1711206641}
   - component: {fileID: 1711206640}
   - component: {fileID: 1711206639}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (96)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28640,7 +29002,7 @@ GameObject:
   - component: {fileID: 1714959748}
   - component: {fileID: 1714959747}
   - component: {fileID: 1714959746}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (71)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28857,7 +29219,7 @@ GameObject:
   - component: {fileID: 1727021296}
   - component: {fileID: 1727021295}
   - component: {fileID: 1727021294}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (122)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -28990,7 +29352,7 @@ GameObject:
   - component: {fileID: 1748896762}
   - component: {fileID: 1748896761}
   - component: {fileID: 1748896760}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (239)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29167,7 +29529,7 @@ GameObject:
   - component: {fileID: 1752809869}
   - component: {fileID: 1752809868}
   - component: {fileID: 1752809867}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (234)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29256,7 +29618,7 @@ GameObject:
   - component: {fileID: 1760914977}
   - component: {fileID: 1760914976}
   - component: {fileID: 1760914975}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (10)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29389,7 +29751,7 @@ GameObject:
   - component: {fileID: 1762624759}
   - component: {fileID: 1762624758}
   - component: {fileID: 1762624757}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (192)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29478,7 +29840,7 @@ GameObject:
   - component: {fileID: 1762739429}
   - component: {fileID: 1762739428}
   - component: {fileID: 1762739427}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (156)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29567,7 +29929,7 @@ GameObject:
   - component: {fileID: 1773193342}
   - component: {fileID: 1773193341}
   - component: {fileID: 1773193340}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (39)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29763,7 +30125,7 @@ GameObject:
   - component: {fileID: 1780833252}
   - component: {fileID: 1780833251}
   - component: {fileID: 1780833250}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (142)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29852,7 +30214,7 @@ GameObject:
   - component: {fileID: 1781739984}
   - component: {fileID: 1781739983}
   - component: {fileID: 1781739982}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (73)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -29941,7 +30303,7 @@ GameObject:
   - component: {fileID: 1786379065}
   - component: {fileID: 1786379064}
   - component: {fileID: 1786379063}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (109)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -30244,7 +30606,7 @@ GameObject:
   - component: {fileID: 1806560903}
   - component: {fileID: 1806560902}
   - component: {fileID: 1806560901}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (231)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -30494,7 +30856,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1895525574065796, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
@@ -30560,7 +30922,7 @@ GameObject:
   - component: {fileID: 1839169178}
   - component: {fileID: 1839169177}
   - component: {fileID: 1839169176}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (138)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -31062,66 +31424,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5dc37e36e0b540a5a0a3260f74b1257, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1899348247
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 28.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.449
-      objectReference: {fileID: 0}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1468137662051214, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_Name
-      value: Portal (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 20466955826868946, guid: 028a87f1e18074d18b689a4ab9f07de4,
-        type: 2}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 8400000, guid: fbff06ee353594d0691673550b95d3fc, type: 2}
-    - target: {fileID: 23917857989409690, guid: 028a87f1e18074d18b689a4ab9f07de4,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7d8479d7b10254d37891a44e8394cb12, type: 2}
-    - target: {fileID: 4120247503257770, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.5349897
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 028a87f1e18074d18b689a4ab9f07de4, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1921331498
 GameObject:
   m_ObjectHideFlags: 0
@@ -31211,7 +31513,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1895525574065796, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
@@ -31233,7 +31535,7 @@ GameObject:
   - component: {fileID: 1922861926}
   - component: {fileID: 1922861925}
   - component: {fileID: 1922861924}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (105)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -31406,7 +31708,7 @@ GameObject:
   - component: {fileID: 1929044246}
   - component: {fileID: 1929044245}
   - component: {fileID: 1929044244}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (36)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -31495,7 +31797,7 @@ GameObject:
   - component: {fileID: 1932055985}
   - component: {fileID: 1932055984}
   - component: {fileID: 1932055983}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (51)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -31584,7 +31886,7 @@ GameObject:
   - component: {fileID: 1944930897}
   - component: {fileID: 1944930896}
   - component: {fileID: 1944930895}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (201)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -31717,7 +32019,7 @@ GameObject:
   - component: {fileID: 1962497710}
   - component: {fileID: 1962497709}
   - component: {fileID: 1962497708}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (110)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -31806,7 +32108,7 @@ GameObject:
   - component: {fileID: 1964452298}
   - component: {fileID: 1964452297}
   - component: {fileID: 1964452296}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (193)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -31960,7 +32262,7 @@ GameObject:
   - component: {fileID: 1966942004}
   - component: {fileID: 1966942003}
   - component: {fileID: 1966942002}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (196)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -32137,7 +32439,7 @@ GameObject:
   - component: {fileID: 1972679252}
   - component: {fileID: 1972679251}
   - component: {fileID: 1972679250}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (220)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -32226,7 +32528,7 @@ GameObject:
   - component: {fileID: 1973561143}
   - component: {fileID: 1973561142}
   - component: {fileID: 1973561141}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (49)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -32359,7 +32661,7 @@ GameObject:
   - component: {fileID: 1982232942}
   - component: {fileID: 1982232941}
   - component: {fileID: 1982232940}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (114)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -32511,7 +32813,7 @@ GameObject:
   - component: {fileID: 2007377097}
   - component: {fileID: 2007377096}
   - component: {fileID: 2007377095}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (137)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -32644,7 +32946,7 @@ GameObject:
   - component: {fileID: 2027072313}
   - component: {fileID: 2027072312}
   - component: {fileID: 2027072311}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (131)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -32733,7 +33035,7 @@ GameObject:
   - component: {fileID: 2031810347}
   - component: {fileID: 2031810346}
   - component: {fileID: 2031810345}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (15)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -32822,7 +33124,7 @@ GameObject:
   - component: {fileID: 2042885882}
   - component: {fileID: 2042885881}
   - component: {fileID: 2042885880}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (209)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33045,7 +33347,7 @@ GameObject:
   - component: {fileID: 2071948463}
   - component: {fileID: 2071948462}
   - component: {fileID: 2071948461}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (172)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33134,7 +33436,7 @@ GameObject:
   - component: {fileID: 2072176714}
   - component: {fileID: 2072176713}
   - component: {fileID: 2072176712}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (232)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33252,7 +33554,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1895525574065796, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 455f02a13e73c4065b83a2367f0aa97c, type: 2}
@@ -33269,7 +33571,7 @@ GameObject:
   - component: {fileID: 2076253201}
   - component: {fileID: 2076253200}
   - component: {fileID: 2076253199}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (11)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33402,7 +33704,7 @@ GameObject:
   - component: {fileID: 2083048904}
   - component: {fileID: 2083048903}
   - component: {fileID: 2083048902}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (212)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33491,7 +33793,7 @@ GameObject:
   - component: {fileID: 2085876636}
   - component: {fileID: 2085876635}
   - component: {fileID: 2085876634}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (119)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33580,7 +33882,7 @@ GameObject:
   - component: {fileID: 2088497525}
   - component: {fileID: 2088497524}
   - component: {fileID: 2088497523}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (91)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33669,7 +33971,7 @@ GameObject:
   - component: {fileID: 2088751161}
   - component: {fileID: 2088751160}
   - component: {fileID: 2088751159}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (160)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -33947,7 +34249,7 @@ GameObject:
   - component: {fileID: 2104077025}
   - component: {fileID: 2104077024}
   - component: {fileID: 2104077023}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (127)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -34225,7 +34527,7 @@ GameObject:
   - component: {fileID: 2120185649}
   - component: {fileID: 2120185648}
   - component: {fileID: 2120185647}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (206)
   m_TagString: Pellet
   m_Icon: {fileID: 0}
@@ -34358,7 +34660,7 @@ GameObject:
   - component: {fileID: 2131591385}
   - component: {fileID: 2131591384}
   - component: {fileID: 2131591383}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pellet (59)
   m_TagString: Pellet
   m_Icon: {fileID: 0}

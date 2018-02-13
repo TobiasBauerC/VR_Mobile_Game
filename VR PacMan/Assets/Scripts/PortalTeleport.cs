@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PortalTeleport : MonoBehaviour {
+public class PortalTeleport : MonoBehaviour 
+{
+	[SerializeField] private Transform _teleDestination = null;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public Vector3 teleDestination
+	{
+		get
+		{
+			return _teleDestination.position;
+		}
 	}
 }
