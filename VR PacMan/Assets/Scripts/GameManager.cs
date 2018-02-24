@@ -13,12 +13,14 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private Text _livesTxt;
 	[SerializeField] private Text _readyTxt;
 	[SerializeField] private Text _dashTxt;
+	[SerializeField] private Text _startText;
 	[SerializeField] private int _oneUpGoal = 10000;
 
 	private int _lives = 2;
 	private int _oneUpScore = 0;
 	private bool _lifeRecived = false;
 	private bool _dashRecovering = false;
+	private bool _playing = false;
 	private Vector3 _spawnLocation = Vector3.zero;
 	private GameObject _playerObject = null;
 	private PlayerController _playerController = null;
@@ -103,7 +105,6 @@ public class GameManager : MonoBehaviour
 
 	public void JustDashed()
 	{
-		Debug.Log("JustDashed");
 		Color newColor = _dashTxt.color;
 		newColor.g = 0.0f;
 		_dashTxt.color = newColor;
@@ -131,7 +132,6 @@ public class GameManager : MonoBehaviour
     }
 	private IEnumerator DashRecovered()
 	{
-		Debug.Log("DashRecovered");
 		Color newColor = _dashTxt.color;
 		newColor.g = 1.0f;
 		_dashTxt.color = newColor;
