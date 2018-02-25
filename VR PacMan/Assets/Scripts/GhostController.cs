@@ -2,19 +2,70 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+
 public class GhostController : MonoBehaviour
 {
 	private Renderer _renderer = null;
 	private Color _normalColor = Color.black;
+	private GhostNode _lastGhostNode = null;
 
+	private bool _moving = true;
+
+	[SerializeField] private Rigidbody _rb = null;
 	[SerializeField] private Transform _spawnPos = null;
+	[SerializeField] private GhostNode _currentNode = null;
+	[SerializeField] private float _minDistanceToNode = 1.0f;
+	[SerializeField] private float _speed = 2.5f;
 
     // Use this for initialization
     void Start()
     {
+		if(!_rb)
+			_rb = GetComponent<Rigidbody>();
+
+		Physics.IgnoreLayerCollision(11, 11);
         _renderer = GetComponent<Renderer>();
         _normalColor = _renderer.material.color;
-    }
+		LookAtTarget();
+	}
+
+	void Update()
+	{
+		if(Vector3.Distance(transform.position, _currentNode.transform.position) <= _minDistanceToNode)
+		{
+			Vector3 newPos = _currentNode.transform.position;
+			newPos.y = transform.position.y;
+			transform.position = newPos;
+			_moving = false;
+			GetNextNode();
+		}
+	}
+
+	void FixedUpdate()
+	{
+		
+		if(_moving)
+		{
+			_rb.velocity = transform.forward * _speed;
+		}
+	}
+
+	private void GetNextNode()
+	{
+		GhostNode tempGhostNode = _currentNode;
+		_currentNode = tempGhostNode.GetNextGhostNode(_lastGhostNode);
+		_lastGhostNode = tempGhostNode;
+		LookAtTarget();
+		_moving = true;
+	}
+
+	private void LookAtTarget()
+	{
+		Vector3 lookAtPosition = _currentNode.transform.position;
+		lookAtPosition.y = transform.position.y;
+		transform.LookAt(lookAtPosition);
+	}
 
     public void GoBlue(bool state)
     {
