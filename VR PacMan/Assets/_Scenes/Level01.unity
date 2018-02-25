@@ -23489,7 +23489,7 @@ GameObject:
   - component: {fileID: 1367363784}
   - component: {fileID: 1367363783}
   - component: {fileID: 1367363788}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TempPinky
   m_TagString: Ghost
   m_Icon: {fileID: 0}
@@ -23510,7 +23510,7 @@ MonoBehaviour:
   _rb: {fileID: 1367363788}
   _spawnPos: {fileID: 1239904038}
   _currentNode: {fileID: 245037404}
-  _minDistanceToNode: 1.05
+  _minDistanceToNode: 0.1
   _speed: 2.5
 --- !u!23 &1367363784
 MeshRenderer:
@@ -28731,7 +28731,7 @@ GameObject:
   - component: {fileID: 1604781794}
   - component: {fileID: 1604781793}
   - component: {fileID: 1604781798}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TempClyde
   m_TagString: Ghost
   m_Icon: {fileID: 0}
@@ -28752,7 +28752,7 @@ MonoBehaviour:
   _rb: {fileID: 1604781798}
   _spawnPos: {fileID: 1239904038}
   _currentNode: {fileID: 245037404}
-  _minDistanceToNode: 1.05
+  _minDistanceToNode: 0.1
   _speed: 2.5
 --- !u!23 &1604781794
 MeshRenderer:
@@ -28849,7 +28849,7 @@ GameObject:
   - component: {fileID: 1606302283}
   - component: {fileID: 1606302282}
   - component: {fileID: 1606302287}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TempInky
   m_TagString: Ghost
   m_Icon: {fileID: 0}
@@ -28870,7 +28870,7 @@ MonoBehaviour:
   _rb: {fileID: 1606302287}
   _spawnPos: {fileID: 1239904038}
   _currentNode: {fileID: 245037404}
-  _minDistanceToNode: 1.05
+  _minDistanceToNode: 0.1
   _speed: 2.5
 --- !u!23 &1606302283
 MeshRenderer:
@@ -32770,7 +32770,7 @@ GameObject:
   - component: {fileID: 1845711804}
   - component: {fileID: 1845711803}
   - component: {fileID: 1845711808}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: TempBlinky
   m_TagString: Ghost
   m_Icon: {fileID: 0}
@@ -32791,7 +32791,7 @@ MonoBehaviour:
   _rb: {fileID: 1845711808}
   _spawnPos: {fileID: 1239904038}
   _currentNode: {fileID: 245037404}
-  _minDistanceToNode: 1.05
+  _minDistanceToNode: 0.1
   _speed: 2.5
 --- !u!23 &1845711804
 MeshRenderer:

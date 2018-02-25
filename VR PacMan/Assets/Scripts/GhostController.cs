@@ -24,7 +24,6 @@ public class GhostController : MonoBehaviour
 		if(!_rb)
 			_rb = GetComponent<Rigidbody>();
 
-		Physics.IgnoreLayerCollision(11, 11);
         _renderer = GetComponent<Renderer>();
         _normalColor = _renderer.material.color;
 		LookAtTarget();
@@ -32,7 +31,7 @@ public class GhostController : MonoBehaviour
 
 	void Update()
 	{
-		if(Vector3.Distance(transform.position, _currentNode.transform.position) <= _minDistanceToNode)
+		if(Vector3.Distance(transform.position, GetRelativeNodePosition(_currentNode.transform.position)) <= _minDistanceToNode)
 		{
 			Vector3 newPos = _currentNode.transform.position;
 			newPos.y = transform.position.y;
@@ -65,6 +64,13 @@ public class GhostController : MonoBehaviour
 		Vector3 lookAtPosition = _currentNode.transform.position;
 		lookAtPosition.y = transform.position.y;
 		transform.LookAt(lookAtPosition);
+	}
+
+	private Vector3 GetRelativeNodePosition(Vector3 nodePosition)
+	{
+		Vector3 newPos = nodePosition;
+		newPos.y = transform.position.y;
+		return newPos;
 	}
 
     public void GoBlue(bool state)
