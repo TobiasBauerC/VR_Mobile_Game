@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         // all the following will be moved into an "OnSceneLoad" function
 		Physics.IgnoreLayerCollision(11, 11);
 		Physics.IgnoreLayerCollision(10, 11);
+		Physics.IgnoreLayerCollision(8, 11);
         _playerObject = GameObject.FindGameObjectWithTag("Player");
         _playerController = _playerObject.GetComponent<PlayerController>();
         _playerController.enabled = false;

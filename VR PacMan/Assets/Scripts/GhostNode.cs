@@ -43,7 +43,8 @@ public class GhostNode : MonoBehaviour
 
 		if(Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity, _ghostNodeMask))
 		{
-			_connectedGhostNodes.Add(hit.collider.GetComponent<GhostNode>());
+			if(hit.collider.gameObject.layer == 10)
+				_connectedGhostNodes.Add(hit.collider.GetComponent<GhostNode>());
 		}
 	}
 
