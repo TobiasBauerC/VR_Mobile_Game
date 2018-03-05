@@ -19,14 +19,6 @@ public class GhostNode : MonoBehaviour
 		StartCoroutine("DisableCollider");
 	}
 
-	void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.Space))
-		{
-			GetNextGhostNode(null);
-		}
-	}
-
 	public GhostNode GetNextGhostNode(GhostNode lastGhostNode)
 	{
 		int newNodeIndex = (int) Random.Range(0, _connectedGhostNodes.Count);

@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         _playerController = _playerObject.GetComponent<PlayerController>();
         _playerController.enabled = false;
         _spawnLocation = _playerObject.transform.position;
-        paused = false;
+		paused = true;
         _scoreTxt.text = string.Format("Score: {0}", score.ToString());
         _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
         _readyTxt.text = READY_MSG;

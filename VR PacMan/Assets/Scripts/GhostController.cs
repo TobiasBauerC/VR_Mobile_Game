@@ -31,6 +31,8 @@ public class GhostController : MonoBehaviour
 
 	void Update()
 	{
+		_moving = !GameManager.instance.paused;
+
 		if(Vector3.Distance(transform.position, GetRelativeNodePosition(_currentNode.transform.position)) <= _minDistanceToNode)
 		{
 			Vector3 newPos = _currentNode.transform.position;
