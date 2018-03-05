@@ -78,7 +78,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _MKGlowPower: 2.5
-    - _MKGlowTexStrength: 0
+    - _MKGlowTexStrength: 0.39
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -89,9 +89,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0, g: 0, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _MKGlowColor: {r: 0, g: 0, b: 0.99264705, a: 1}
+    - _MKGlowColor: {r: 0, g: 0, b: 1, a: 1}
     - _MKGlowTexColor: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
