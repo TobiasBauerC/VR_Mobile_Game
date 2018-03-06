@@ -106,8 +106,6 @@ public class PlayerController : MonoBehaviour
         if (_moving)
         {
             Vector3 lookDir = _cam.eulerAngles;
-            Debug.Log(lookDir);
-            //lookDir.y = Mathf.Round(lookDir.y / 90) * 90;
 
             if (_currentHorRail && _currentVerRail)
             {
