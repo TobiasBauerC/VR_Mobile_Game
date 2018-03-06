@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
     private WaitForSeconds _chaseModeTime = null;
     [SerializeField] private RailInfo _currentHorRail = null;
     [SerializeField] private RailInfo _currentVerRail = null;
-    private Vector3 _upVector = new Vector3(0, 0, 1);
-    private Vector3 _downVector = new Vector3(0, 0, -1);
     private int _blueGhostPoints = 200;
     private float _speed = 0.0f;
     private float _tapElapsedTime = 0.0f;
@@ -108,25 +106,26 @@ public class PlayerController : MonoBehaviour
         if (_moving)
         {
             Vector3 lookDir = _cam.eulerAngles;
-            lookDir.y = Mathf.Round(lookDir.y / 90) * 90;
+            Debug.Log(lookDir);
+            //lookDir.y = Mathf.Round(lookDir.y / 90) * 90;
 
             if (_currentHorRail && _currentVerRail)
             {
-                if (lookDir.y == 270)
-                {
-                    _rb.velocity = Vector3.left * _speed;
-                }
-                else if (lookDir.y == 90)
+                if (lookDir.y >= 45 && lookDir.y <= 135)
                 {
                     _rb.velocity = Vector3.right * _speed;
                 }
-                else if (lookDir.y == 0 || lookDir.y == 360)
+                else if (lookDir.y >= 225 && lookDir.y <= 315)
                 {
-                    _rb.velocity = _upVector * _speed;
+                    _rb.velocity = Vector3.left * _speed;
                 }
-                else if (lookDir.y == 180)
+                else if (lookDir.y >= 135 && lookDir.y <= 225)
                 {
-                    _rb.velocity = _downVector * _speed;
+                    _rb.velocity = Vector3.back * _speed;
+                }
+                else
+                {
+                    _rb.velocity = Vector3.forward * _speed;
                 }
             }
             else if (_currentHorRail != null)
@@ -151,13 +150,13 @@ public class PlayerController : MonoBehaviour
                     transform.position = pos;
                 }
 
-                if (lookDir.y == 270)
-                {
-                    _rb.velocity = Vector3.left * _speed;
-                }
-                else if (lookDir.y == 90)
+                if (lookDir.y >= 0 && lookDir.y <= 180)
                 {
                     _rb.velocity = Vector3.right * _speed;
+                }
+                else
+                {
+                    _rb.velocity = Vector3.left * _speed;
                 }
             }
             else if (_currentVerRail != null)
@@ -182,13 +181,13 @@ public class PlayerController : MonoBehaviour
                     transform.position = pos;
                 }
 
-                if (lookDir.y == 0 || lookDir.y == 360)
+                if (lookDir.y >= 90 && lookDir.y <= 270)
                 {
-                    _rb.velocity = _upVector * _speed;
+                    _rb.velocity = Vector3.back * _speed;
                 }
-                else if (lookDir.y == 180)
+                else
                 {
-                    _rb.velocity = _downVector * _speed;
+                    _rb.velocity = Vector3.forward * _speed;
                 }
             }
         }
