@@ -274,6 +274,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                _moving = false;
                 GameManager.instance.PlayerHit();
             }
         }

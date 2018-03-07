@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{016AFE11-DDCD-F488-08D8-D57449959A0B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GhostController.cs">
     <Files>
       <File FileName="Assets/Scripts/GameManager.cs" Line="72" Column="37" />
       <File FileName="Assets/Scripts/PlayerController.cs" Line="108" Column="48" />

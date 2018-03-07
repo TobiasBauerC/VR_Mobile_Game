@@ -102,6 +102,7 @@ public class GameManager : MonoBehaviour
         if (_lives > 0)
             _lives--;
 
+        paused = true;
         _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
         StartCoroutine(RespawnPlayer());
     }
