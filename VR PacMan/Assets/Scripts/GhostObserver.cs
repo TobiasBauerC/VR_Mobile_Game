@@ -55,4 +55,15 @@ public class GhostObserver : MonoBehaviour
             }
         }
     }
+
+    public void ResetGhosts()
+    {
+        if (_ghosts.Count > 0)
+        {
+            foreach (GhostController _ghost in _ghosts)
+            {
+                _ghost.Respawn();
+            }
+        }
+    }
 }

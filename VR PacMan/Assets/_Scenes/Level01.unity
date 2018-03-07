@@ -6111,6 +6111,7 @@ MonoBehaviour:
   _dashTxt: {fileID: 824992508}
   _startText: {fileID: 0}
   _oneUpGoal: 10000
+  _ghostObserver: {fileID: 255416961}
 --- !u!4 &255416960
 Transform:
   m_ObjectHideFlags: 0
@@ -30657,7 +30658,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 1367363788}
-  _spawnPos: {fileID: 353335804}
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
@@ -32731,7 +32731,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400276, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1428571185}
-  m_LocalRotation: {x: -0.09374654, y: 0.6978552, z: 0.70746905, w: 0.06080672}
+  m_LocalRotation: {x: -0.093746535, y: 0.6978551, z: 0.707469, w: 0.060806703}
   m_LocalPosition: {x: -0.05543403, y: 0.0017306843, z: 0.098653734}
   m_LocalScale: {x: 1.0000004, y: 1.0000006, z: 1.0000005}
   m_Children:
@@ -36598,7 +36598,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 1604781798}
-  _spawnPos: {fileID: 353335804}
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
@@ -36716,7 +36715,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 1606302287}
-  _spawnPos: {fileID: 353335804}
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
@@ -41386,7 +41384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 1845711808}
-  _spawnPos: {fileID: 353335804}
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
@@ -41655,8 +41652,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1871860195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: 7.177824, y: -0.53, z: 26.929836}
-  m_LocalScale: {x: 5.0079556, y: 3.496491, z: 0.5}
+  m_LocalPosition: {x: 7.177824, y: -0.556, z: 26.929836}
+  m_LocalScale: {x: 5.0079556, y: 3.4445934, z: 0.5}
   m_Children: []
   m_Father: {fileID: 944290008}
   m_RootOrder: 64

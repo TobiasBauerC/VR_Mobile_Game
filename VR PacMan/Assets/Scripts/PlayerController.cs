@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rb = null;
     private WaitForSeconds _chaseModeTime = null;
+    private WaitForSeconds _dashWaitTime = null;
     [SerializeField] private RailInfo _currentHorRail = null;
     [SerializeField] private RailInfo _currentVerRail = null;
     private int _blueGhostPoints = 200;
@@ -25,6 +26,19 @@ public class PlayerController : MonoBehaviour
     public bool chaseMode { private set; get; }
     public bool canDash { private set; get; }
 
+    public WaitForSeconds ChaseModeTime
+    {
+        get
+        {
+            return _chaseModeTime;
+        }
+
+        set
+        {
+            _chaseModeTime = value;
+        }
+    }
+
 
     // Use this for initialization
     void Start()
@@ -33,7 +47,8 @@ public class PlayerController : MonoBehaviour
         if (!_cam)
             _cam = Camera.main.transform;
 
-        _chaseModeTime = new WaitForSeconds(10.0f);
+        ChaseModeTime = new WaitForSeconds(1000.0f);
+        _dashWaitTime = new WaitForSeconds(10.0f);
         chaseMode = false;
         canDash = true;
     }
@@ -283,7 +298,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator ChaseMode()
     {
         chaseMode = true;
-        yield return _chaseModeTime;
+        yield return ChaseModeTime;
         chaseMode = false;
         _blueGhostPoints = 200;
     }
@@ -291,7 +306,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator CanDash()
     {
         GameManager.instance.DashRecover();
-        yield return _chaseModeTime;
+        yield return _dashWaitTime;
         canDash = true;
     }
 

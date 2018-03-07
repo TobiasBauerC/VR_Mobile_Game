@@ -6,15 +6,16 @@ using UnityEngine;
 
 public class GhostController : MonoBehaviour
 {
-	private Renderer _renderer = null;
-	private Color _normalColor = Color.black;
-	private GhostNode _lastGhostNode = null;
+	private Renderer _renderer;
+    private Color _normalColor;
+    private GhostNode _lastGhostNode;
+    private GhostNode _firstGhostNode;
+    private Vector3 _spawnPos;
 
 	private bool _moving = true;
 
-	[SerializeField] private Rigidbody _rb = null;
-	[SerializeField] private Transform _spawnPos = null;
-	[SerializeField] private GhostNode _currentNode = null;
+	[SerializeField] private Rigidbody _rb;
+	[SerializeField] private GhostNode _currentNode;
 	[SerializeField] private float _minDistanceToNode = 1.0f;
 	[SerializeField] private float _speed = 2.5f;
 
@@ -24,6 +25,8 @@ public class GhostController : MonoBehaviour
 		if(!_rb)
 			_rb = GetComponent<Rigidbody>();
 
+        _firstGhostNode = _currentNode;
+        _spawnPos = transform.position;
         _renderer = GetComponent<Renderer>();
         _normalColor = _renderer.material.color;
 		LookAtTarget();
@@ -89,10 +92,13 @@ public class GhostController : MonoBehaviour
 
     public void Respawn()
     {
+        _moving = false;
         Vector3 newPos = transform.position;
-        newPos.x = _spawnPos.position.x;
-        newPos.z = _spawnPos.position.z;
+        newPos.x = _spawnPos.x;
+        newPos.z = _spawnPos.z;
         transform.position = newPos;
         GoBlue(false);
+        _currentNode = _firstGhostNode;
+        LookAtTarget();
     }
 }

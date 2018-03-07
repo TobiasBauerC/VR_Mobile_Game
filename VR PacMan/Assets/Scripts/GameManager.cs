@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private Text _dashTxt;
 	[SerializeField] private Text _startText;
 	[SerializeField] private int _oneUpGoal = 10000;
+    [SerializeField] private GhostObserver _ghostObserver;
 
 	private int _lives = 2;
 	private int _oneUpScore = 0;
@@ -49,6 +50,8 @@ public class GameManager : MonoBehaviour
 		Physics.IgnoreLayerCollision(11, 11);
 		Physics.IgnoreLayerCollision(10, 11);
 		Physics.IgnoreLayerCollision(8, 11);
+        if (!_ghostObserver)
+            _ghostObserver = GetComponent<GhostObserver>();
         _playerObject = GameObject.FindGameObjectWithTag("Player");
         _playerController = _playerObject.GetComponent<PlayerController>();
         _playerController.enabled = false;
@@ -123,6 +126,7 @@ public class GameManager : MonoBehaviour
     {
         _playerController.enabled = false;
         yield return _respawnWait;
+        _ghostObserver.ResetGhosts();
         _readyTxt.text = READY_MSG;
         _playerObject.transform.position = _spawnLocation;
 		StartCoroutine(StartPlayer());
