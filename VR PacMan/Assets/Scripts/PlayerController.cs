@@ -77,13 +77,13 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetTouch(i).phase == TouchPhase.Ended)
             {
-                _moving = false;
-                _tapped = false;
-
-                if (_tapElapsedTime <= _tapTime)
+                if (_tapElapsedTime <= _tapTime && _tapped == true)
                 {
                     Dash();
                 }
+
+                _moving = false;
+                _tapped = false;
 
                 _tapElapsedTime = 0.0f;
             }
@@ -98,13 +98,13 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            _moving = false;
-            _tapped = false;
-
-            if (_tapElapsedTime <= _tapTime)
+            if (_tapElapsedTime <= _tapTime && _tapped == true)
             {
                 Dash();
             }
+
+            _moving = false;
+            _tapped = false;
 
             _tapElapsedTime = 0.0f;
         }
