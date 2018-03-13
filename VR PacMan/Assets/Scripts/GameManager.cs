@@ -13,14 +13,12 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private Text _livesTxt;
 	[SerializeField] private Text _readyTxt;
 	[SerializeField] private Text _dashTxt;
-	[SerializeField] private Text _startText;
 	[SerializeField] private int _oneUpGoal = 10000;
     [SerializeField] private GhostObserver _ghostObserver;
 
     [Header("Audio")]
     [SerializeField] private AudioSource _playerAudioSource;
     [SerializeField] private AudioClip _readyClip;
-    [SerializeField] private AudioClip _pelletAudioClip;
     [SerializeField] private AudioClip _deathClip;
     [SerializeField] private AudioClip _eatGhostClip;
 
@@ -85,9 +83,7 @@ public class GameManager : MonoBehaviour
     // used to add score as long as the given score is more than 0.
     public void AddScore(int amount)
     {
-        if(amount == 50 || amount == 10)
-            _playerAudioSource.PlayOneShot(_pelletAudioClip, 1.0f);
-        else if(amount == 200)
+        if(amount == 200)
             _playerAudioSource.PlayOneShot(_eatGhostClip, 1.0f);
 
         if (amount > 0)

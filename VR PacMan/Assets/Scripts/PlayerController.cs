@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private float _speed = 0.0f;
     private float _tapElapsedTime = 0.0f;
     private float _dashElapsedTime = 0.0f;
+    private float _munchElapseTime = 0.0f;
     private bool _moving = false;
     private bool _dashing = false;
     private bool _tapped = false;
@@ -22,6 +23,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _tapTime = 0.1f;
     [SerializeField] private float _dashTime = 0.75f;
     [SerializeField] private Transform _cam = null;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource _munchSource;
 
     public bool chaseMode { private set; get; }
     public bool canDash { private set; get; }
@@ -66,6 +70,14 @@ public class PlayerController : MonoBehaviour
         {
             _tapElapsedTime += Time.deltaTime;
         }
+
+        if (_moving == false)
+            _munchSource.Stop();
+
+        if (_munchSource.isPlaying && _munchElapseTime >= 0.75f)
+            _munchSource.Stop();
+        else
+            _munchElapseTime += Time.deltaTime;
 
 #if UNITY_ANDROID || UNITY_IOS
         for (int i = 0; i < Input.touchCount; ++i)
@@ -232,12 +244,24 @@ public class PlayerController : MonoBehaviour
     {
         if (c.gameObject.tag == "PowerPellet")
         {
+            if (!_munchSource.isPlaying)
+            {
+                _munchSource.Play();
+            }
+            _munchElapseTime = 0.0f;
+
             Destroy(c.gameObject);
             GameManager.instance.AddScore(50);
             StartCoroutine(ChaseMode());
         }
         else if (c.gameObject.tag == "Pellet")
         {
+            if (!_munchSource.isPlaying)
+            {
+                _munchSource.Play();
+            }
+            _munchElapseTime = 0.0f;
+
             Destroy(c.gameObject);
             GameManager.instance.AddScore(10);
         }
@@ -288,6 +312,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                _munchSource.Stop();
                 _moving = false;
                 GameManager.instance.PlayerHit();
             }
