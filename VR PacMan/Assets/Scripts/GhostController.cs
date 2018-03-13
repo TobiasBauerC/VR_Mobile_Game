@@ -38,6 +38,9 @@ public class GhostController : MonoBehaviour
 	{
 		_moving = !GameManager.instance.paused;
 
+        if (!_moving)
+            _rb.isKinematic = true;
+
 		if(Vector3.Distance(transform.position, GetRelativeNodePosition(_currentNode.transform.position)) <= _minDistanceToNode)
 		{
 			Vector3 newPos = _currentNode.transform.position;
@@ -53,6 +56,7 @@ public class GhostController : MonoBehaviour
 		
 		if(_moving)
 		{
+            _rb.isKinematic = false;
 			_rb.velocity = transform.forward * _speed;
 		}
 	}
