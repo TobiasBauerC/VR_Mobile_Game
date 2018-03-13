@@ -17,6 +17,13 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private int _oneUpGoal = 10000;
     [SerializeField] private GhostObserver _ghostObserver;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource _playerAudioSource;
+    [SerializeField] private AudioClip _readyClip;
+    [SerializeField] private AudioClip _pelletAudioClip;
+    [SerializeField] private AudioClip _deathClip;
+    [SerializeField] private AudioClip _eatGhostClip;
+
 	private int _lives = 2;
 	private int _oneUpScore = 0;
 	private bool _lifeRecived = false;
@@ -26,7 +33,7 @@ public class GameManager : MonoBehaviour
 	private GameObject _playerObject = null;
 	private PlayerController _playerController = null;
 	private WaitForSeconds _respawnWait = new WaitForSeconds(2.0f);
-	private WaitForSeconds _startWait = new WaitForSeconds(3.0f);
+	private WaitForSeconds _startWait = new WaitForSeconds(4.0f);
 
     public int score
     {
@@ -43,8 +50,6 @@ public class GameManager : MonoBehaviour
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
-
-        DontDestroyOnLoad(gameObject);
 
         // all the following will be moved into an "OnSceneLoad" function
 		Physics.IgnoreLayerCollision(11, 11);
@@ -80,6 +85,11 @@ public class GameManager : MonoBehaviour
     // used to add score as long as the given score is more than 0.
     public void AddScore(int amount)
     {
+        if(amount == 50 || amount == 10)
+            _playerAudioSource.PlayOneShot(_pelletAudioClip, 1.0f);
+        else if(amount == 200)
+            _playerAudioSource.PlayOneShot(_eatGhostClip, 1.0f);
+
         if (amount > 0)
         {
             _oneUpScore = score += amount; // set OneUpScore and score at the ame time
@@ -102,12 +112,19 @@ public class GameManager : MonoBehaviour
 
     public void PlayerHit()
     {
-        if (_lives > 0)
-            _lives--;
+        _playerAudioSource.PlayOneShot(_deathClip, 1.0f);
 
-        paused = true;
-        _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
-        StartCoroutine(RespawnPlayer());
+        if (_lives > 0)
+        {
+            _lives--;
+            paused = true;
+            _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
+            StartCoroutine(RespawnPlayer());
+        }
+        else
+        {
+            StartCoroutine("KillPlayer");
+        }
     }
 
 	public void JustDashed()
@@ -126,6 +143,7 @@ public class GameManager : MonoBehaviour
     {
         _playerController.enabled = false;
         yield return _respawnWait;
+
         _ghostObserver.ResetGhosts();
         _readyTxt.text = READY_MSG;
         _playerObject.transform.position = _spawnLocation;
@@ -134,10 +152,18 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator StartPlayer()
     {
+        _playerAudioSource.PlayOneShot(_readyClip, 1.0f);
         yield return _startWait;
         _readyTxt.text = "";
         _playerController.enabled = true;
     }
+
+    private IEnumerator KillPlayer()
+    {
+        yield return _startWait;
+        SceneManager.instance.GoToGameOver(2);
+    }
+
 	private IEnumerator DashRecovered()
 	{
 		Color newColor = _dashTxt.color;
