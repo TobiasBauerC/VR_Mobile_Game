@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
 	private int _lives = 2;
 	private int _oneUpScore = 0;
+    private int _pelletsRemaining;
 	private bool _lifeRecived = false;
 	private bool _dashRecovering = false;
 	private bool _playing = false;
@@ -60,6 +61,13 @@ public class GameManager : MonoBehaviour
         _playerController.enabled = false;
         _spawnLocation = _playerObject.transform.position;
 		paused = true;
+
+        GameObject[] pellets = GameObject.FindGameObjectsWithTag("Pellet");
+        _pelletsRemaining += pellets.Length;
+        GameObject[] powerPellets = GameObject.FindGameObjectsWithTag("PowerPellet");
+        _pelletsRemaining += powerPellets.Length;
+        _pelletsRemaining++;
+
         _scoreTxt.text = string.Format("Score: {0}", score.ToString());
         _livesTxt.text = string.Format("Lives: {0}", _lives.ToString());
         _readyTxt.text = READY_MSG;
@@ -78,6 +86,11 @@ public class GameManager : MonoBehaviour
 				StartCoroutine(DashRecovered());
 			}
 		}
+
+        if (_pelletsRemaining <= 0)
+        {
+            StartCoroutine(KillPlayer(3));
+        }
 	}
 
     // used to add score as long as the given score is more than 0.
@@ -85,6 +98,10 @@ public class GameManager : MonoBehaviour
     {
         if(amount == 200)
             _playerAudioSource.PlayOneShot(_eatGhostClip, 1.0f);
+        else
+        {
+            _pelletsRemaining--;
+        }
 
         if (amount > 0)
         {
@@ -119,7 +136,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine("KillPlayer");
+            StartCoroutine(KillPlayer(2));
         }
     }
 
@@ -154,10 +171,11 @@ public class GameManager : MonoBehaviour
         _playerController.enabled = true;
     }
 
-    private IEnumerator KillPlayer()
+    private IEnumerator KillPlayer(int winLoss)
     {
+        _playerController.enabled = false;
         yield return _startWait;
-        SceneManager.instance.GoToGameOver(2);
+        SceneManager.instance.GoToGameOver(winLoss);
     }
 
 	private IEnumerator DashRecovered()

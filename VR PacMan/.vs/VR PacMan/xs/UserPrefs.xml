@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{016AFE11-DDCD-F488-08D8-D57449959A0B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="88" Column="40" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="107" Column="24" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="14" Column="26" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="241" Column="6" />
       <File FileName="Assets/Scripts/GhostController.cs" Line="59" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/tobiasbauer/Documents/Toronto Film School/Graphics Mobile programming/PacMan VR/VR PacMan/Assets/Scripts/PlayerController.cs" relfile="Assets/Scripts/PlayerController.cs" line="66" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.VR_220PacMan PreferredExecutionTarget="Unity.Editor" />

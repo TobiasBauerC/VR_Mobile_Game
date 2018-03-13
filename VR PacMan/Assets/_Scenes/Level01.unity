@@ -5498,7 +5498,7 @@ GameObject:
   - component: {fileID: 233761890}
   m_Layer: 8
   m_Name: Pellet (235)
-  m_TagString: Pellet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12454,7 +12454,7 @@ GameObject:
   - component: {fileID: 560261582}
   m_Layer: 8
   m_Name: Pellet (126)
-  m_TagString: Pellet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19161,7 +19161,7 @@ GameObject:
   - component: {fileID: 831200479}
   m_Layer: 8
   m_Name: Pellet (233)
-  m_TagString: Pellet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25107,7 +25107,7 @@ GameObject:
   - component: {fileID: 1111322123}
   m_Layer: 8
   m_Name: Pellet (127)
-  m_TagString: Pellet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26601,7 +26601,7 @@ GameObject:
   - component: {fileID: 1199246291}
   m_Layer: 8
   m_Name: Pellet (234)
-  m_TagString: Pellet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28710,7 +28710,7 @@ GameObject:
   - component: {fileID: 1264023402}
   m_Layer: 8
   m_Name: Pellet (125)
-  m_TagString: Pellet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
