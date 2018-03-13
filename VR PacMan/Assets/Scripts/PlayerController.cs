@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         if (!_cam)
             _cam = Camera.main.transform;
 
-        ChaseModeTime = new WaitForSeconds(1000.0f);
+        ChaseModeTime = new WaitForSeconds(10.0f);
         _dashWaitTime = new WaitForSeconds(10.0f);
         chaseMode = false;
         canDash = true;
@@ -280,7 +280,7 @@ public class PlayerController : MonoBehaviour
     {
         if (c.gameObject.tag == "Ghost")
         {
-            if (chaseMode)
+            if (chaseMode && c.gameObject.GetComponent<GhostController>().isBlue)
             {
                 c.gameObject.GetComponent<GhostController>().Respawn();
                 GameManager.instance.AddScore(_blueGhostPoints);

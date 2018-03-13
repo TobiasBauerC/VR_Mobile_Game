@@ -14,6 +14,8 @@ public class GhostController : MonoBehaviour
 
 	private bool _moving = true;
 
+    public bool isBlue { get; set; }
+
 	[SerializeField] private Rigidbody _rb;
 	[SerializeField] private GhostNode _currentNode;
 	[SerializeField] private float _minDistanceToNode = 1.0f;
@@ -82,10 +84,12 @@ public class GhostController : MonoBehaviour
     {
         if (state)
         {
+            isBlue = true;
             _renderer.material.color = Color.blue;
         }
         else
         {
+            isBlue = false;
             _renderer.material.color = _normalColor;
         }
     }
