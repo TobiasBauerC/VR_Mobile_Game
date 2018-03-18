@@ -30787,6 +30787,22 @@ MonoBehaviour:
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
+  getNextNodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1367363783}
+        m_MethodName: GetClosestPacManFlankNode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!23 &1367363784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36727,6 +36743,22 @@ MonoBehaviour:
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
+  getNextNodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1604781793}
+        m_MethodName: GetNextNode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!23 &1604781794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36844,6 +36876,22 @@ MonoBehaviour:
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
+  getNextNodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1606302282}
+        m_MethodName: GetNextNode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!23 &1606302283
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41622,6 +41670,22 @@ MonoBehaviour:
   _currentNode: {fileID: 353335805}
   _minDistanceToNode: 0.1
   _speed: 2.5
+  getNextNodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1845711803}
+        m_MethodName: GetClosestPacManNode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!23 &1845711804
 MeshRenderer:
   m_ObjectHideFlags: 0

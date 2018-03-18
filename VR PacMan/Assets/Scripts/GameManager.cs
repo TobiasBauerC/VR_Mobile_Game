@@ -40,6 +40,11 @@ public class GameManager : MonoBehaviour
         get;
     }
 
+    public Transform pacManTransform
+    {
+        get { return _playerObject.transform; }
+    }
+
     public bool paused { get; set; }
 
     // initial setup

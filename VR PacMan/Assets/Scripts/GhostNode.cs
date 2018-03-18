@@ -28,7 +28,49 @@ public class GhostNode : MonoBehaviour
 		else
 			return GetNextGhostNode(lastGhostNode);
 	}
-	
+
+    public GhostNode GetNextPacManGhostNode(GhostNode lastGhostNode)
+    {
+        GhostNode closestNode = null;
+        float closestDistance = Mathf.Infinity;
+        Vector3 playerPos = GameManager.instance.pacManTransform.position;
+
+        foreach(GhostNode node in _connectedGhostNodes)
+        {
+            if (node == lastGhostNode)
+                continue;
+            float distance = Vector3.Distance(node.transform.position, playerPos);
+            if(distance < closestDistance)
+            {
+                closestNode = node;
+                closestDistance = distance;
+            }
+        }
+
+        return closestNode;
+    }
+
+    public GhostNode GetNextPacManFlankGhostNode(GhostNode lastGhostNode)
+    {
+        GhostNode closestNode = null;
+        float closestDistance = Mathf.Infinity;
+        Vector3 playerFlankPos = GameManager.instance.pacManTransform.position + (Camera.main.transform.forward * 10.0f);
+
+        foreach (GhostNode node in _connectedGhostNodes)
+        {
+            if (node == lastGhostNode)
+                continue;
+            float distance = Vector3.Distance(node.transform.position, playerFlankPos);
+            if (distance < closestDistance)
+            {
+                closestNode = node;
+                closestDistance = distance;
+            }
+        }
+
+        return closestNode;
+    }
+
 	private void GetGhostNode(Vector3 direction)
 	{
 		RaycastHit hit;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 
@@ -20,6 +21,7 @@ public class GhostController : MonoBehaviour
 	[SerializeField] private GhostNode _currentNode;
 	[SerializeField] private float _minDistanceToNode = 1.0f;
 	[SerializeField] private float _speed = 2.5f;
+    [SerializeField] private UnityEvent getNextNodeEvent;
 
     // Use this for initialization
     void Start()
@@ -47,7 +49,7 @@ public class GhostController : MonoBehaviour
 			newPos.y = transform.position.y;
 			transform.position = newPos;
 			_moving = false;
-			GetNextNode();
+            getNextNodeEvent.Invoke();
 		}
 	}
 
@@ -61,7 +63,25 @@ public class GhostController : MonoBehaviour
 		}
 	}
 
-	private void GetNextNode()
+    public void GetClosestPacManFlankNode()
+    {
+        GhostNode tempGhostNode = _currentNode;
+        _currentNode = tempGhostNode.GetNextPacManFlankGhostNode(_lastGhostNode);
+        _lastGhostNode = tempGhostNode;
+        LookAtTarget();
+        _moving = true;
+    }
+
+    public void GetClosestPacManNode()
+    {
+        GhostNode tempGhostNode = _currentNode;
+        _currentNode = tempGhostNode.GetNextPacManGhostNode(_lastGhostNode);
+        _lastGhostNode = tempGhostNode;
+        LookAtTarget();
+        _moving = true;
+    }
+
+    public void GetNextNode()
 	{
 		GhostNode tempGhostNode = _currentNode;
 		_currentNode = tempGhostNode.GetNextGhostNode(_lastGhostNode);
