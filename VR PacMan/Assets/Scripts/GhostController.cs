@@ -14,6 +14,8 @@ public class GhostController : MonoBehaviour
     private Vector3 _spawnPos;
 
 	private bool _moving = true;
+    private bool _chaseCorner = true;
+    private float _cornerChaseTimer = 0.0f;
 
     public bool isBlue { get; set; }
 
@@ -51,6 +53,8 @@ public class GhostController : MonoBehaviour
 			_moving = false;
             getNextNodeEvent.Invoke();
 		}
+
+        _cornerChaseTimer += Time.deltaTime;
 	}
 
 	void FixedUpdate()
@@ -79,6 +83,32 @@ public class GhostController : MonoBehaviour
         _lastGhostNode = tempGhostNode;
         LookAtTarget();
         _moving = true;
+    }
+
+    public void GetNextClydeGhostNode()
+    {
+        GhostNode tempGhostNode = _currentNode;
+        if (_chaseCorner)
+            _currentNode = tempGhostNode.GetFurthesrPacManGhostNode(_lastGhostNode);
+        else
+            _currentNode = tempGhostNode.GetNextPacManGhostNode(_lastGhostNode);
+        _lastGhostNode = tempGhostNode;
+        LookAtTarget();
+        _moving = true;
+
+        if (_chaseCorner && _cornerChaseTimer >= 20.0f)
+        {
+            _chaseCorner = false;
+            _cornerChaseTimer = 0.0f;
+            return;
+        }
+
+        if(!_chaseCorner && (Vector3.Distance(transform.position, GameManager.instance.pacManTransform.position) < 10.0f))
+        {
+            _chaseCorner = true;
+            _cornerChaseTimer = 0.0f;
+            return;
+        }
     }
 
     public void GetNextNode()

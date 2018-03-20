@@ -50,6 +50,27 @@ public class GhostNode : MonoBehaviour
         return closestNode;
     }
 
+    public GhostNode GetFurthesrPacManGhostNode(GhostNode lastGhostNode)
+    {
+        GhostNode closestNode = null;
+        float closestDistance = 0;
+        Vector3 playerPos = GameManager.instance.pacManTransform.position;
+
+        foreach (GhostNode node in _connectedGhostNodes)
+        {
+            if (node == lastGhostNode)
+                continue;
+            float distance = Vector3.Distance(node.transform.position, playerPos);
+            if (distance > closestDistance)
+            {
+                closestNode = node;
+                closestDistance = distance;
+            }
+        }
+
+        return closestNode;
+    }
+
     public GhostNode GetNextPacManFlankGhostNode(GhostNode lastGhostNode)
     {
         GhostNode closestNode = null;
