@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private float _tapElapsedTime = 0.0f;
     private float _dashElapsedTime = 0.0f;
     private float _munchElapseTime = 0.0f;
-    private bool _moving = false;
+    private bool _moving = true;
     private bool _dashing = false;
     private bool _tapped = false;
 
@@ -25,7 +25,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _cam = null;
 
     [Header("Audio")]
-    [SerializeField] private AudioSource _munchSource;
+    [SerializeField]
+    private AudioSource _munchSource;
 
     public bool chaseMode { private set; get; }
     public bool canDash { private set; get; }
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		GameManager.instance.paused = !_moving;
+        GameManager.instance.paused = !_moving;
 
         PlayerMovement();
     }
@@ -84,7 +85,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
-                _moving = true;
+                _moving = false;
                 _tapped = true;
             }
             else if (Input.GetTouch(i).phase == TouchPhase.Ended)
@@ -94,7 +95,7 @@ public class PlayerController : MonoBehaviour
                     Dash();
                 }
 
-                _moving = false;
+                _moving = true;
                 _tapped = false;
 
                 _tapElapsedTime = 0.0f;
@@ -105,7 +106,7 @@ public class PlayerController : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
-            _moving = true;
+            _moving = false;
             _tapped = true;
         }
         else if (Input.GetMouseButtonUp(0))
@@ -115,7 +116,7 @@ public class PlayerController : MonoBehaviour
                 Dash();
             }
 
-            _moving = false;
+            _moving = true;
             _tapped = false;
 
             _tapElapsedTime = 0.0f;
