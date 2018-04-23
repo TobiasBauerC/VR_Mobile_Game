@@ -228,13 +228,13 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.JustDashed();
             _dashing = true;
             _speed = _dashSpeed;
-            _moving = true;
+            _moving = false;
             _dashElapsedTime += Time.deltaTime;
         }
         else
         {
             canDash = false;
-            _moving = false;
+            _moving = true;
             _dashing = false;
             _dashElapsedTime = 0.0f;
             StartCoroutine(CanDash());
