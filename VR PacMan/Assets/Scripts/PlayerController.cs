@@ -57,6 +57,11 @@ public class PlayerController : MonoBehaviour
         canDash = true;
     }
 
+    void OnEnable()
+    {
+        _moving = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -228,7 +233,7 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.JustDashed();
             _dashing = true;
             _speed = _dashSpeed;
-            _moving = false;
+            _moving = true;
             _dashElapsedTime += Time.deltaTime;
         }
         else
